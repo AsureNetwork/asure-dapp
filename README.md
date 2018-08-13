@@ -27,7 +27,7 @@ is very welcome.
 npm install -g npm
 
 # Install dependencies.
-npm  install
+npm install
 
 # Start Ganache. Ganache will deploy all smart
 # contracts and test data.  This will take a

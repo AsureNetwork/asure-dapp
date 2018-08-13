@@ -2,6 +2,8 @@
   "name": "device-wrapper",
   "version": "0.1.0",
   "private": true,
+  "author": "Asure Foundation <info@asure.io>",
+  "license": "ISC",
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

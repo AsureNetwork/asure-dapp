@@ -92,24 +92,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50610163806100206000396000f30060806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166320ccd9a28114610071578063442172121461009e578063961a04fa146100ba57806397191019146100cf578063a66fbd0e146100eb575b600080fd5b34801561007d57600080fd5b5061008c60ff60043516610107565b60408051918252519081900360200190f35b3480156100aa57600080fd5b5061008c61ffff6004351661010d565b3480156100c657600080fd5b5061008c61011b565b3480156100db57600080fd5b5061008c61ffff60043516610121565b3480156100f757600080fd5b5061008c61ffff60043516610130565b50606490565b5068019274b259f654000090565b6103e890565b5069065a4da25d3016c0000090565b50610744905600a165627a7a723058207a9174452d5a40d7be7dd81964e460dad011bab11c35b57ed6ee46b464fbafe00029",
-  "deployedBytecode": "0x60806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166320ccd9a28114610071578063442172121461009e578063961a04fa146100ba57806397191019146100cf578063a66fbd0e146100eb575b600080fd5b34801561007d57600080fd5b5061008c60ff60043516610107565b60408051918252519081900360200190f35b3480156100aa57600080fd5b5061008c61ffff6004351661010d565b3480156100c657600080fd5b5061008c61011b565b3480156100db57600080fd5b5061008c61ffff60043516610121565b3480156100f757600080fd5b5061008c61ffff60043516610130565b50606490565b5068019274b259f654000090565b6103e890565b5069065a4da25d3016c0000090565b50610744905600a165627a7a723058207a9174452d5a40d7be7dd81964e460dad011bab11c35b57ed6ee46b464fbafe00029",
-  "sourceMap": "54:697:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;54:697:5;;;;;;;",
-  "deployedSourceMap": "54:697:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;83:135;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;83:135:5;;;;;;;;;;;;;;;;;;;;;;;265:97;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;265:97:5;;;;;;;654:95;;8:9:-1;5:2;;;30:1;27;20:12;5:2;654:95:5;;;;534:116;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;534:116:5;;;;;;;366:132;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;366:132:5;;;;;;;83:135;-1:-1:-1;210:3:5;;83:135::o;265:97::-;-1:-1:-1;348:9:5;;265:97::o;654:95::-;740:4;654:95;:::o;534:116::-;-1:-1:-1;623:22:5;;534:116::o;366:132::-;-1:-1:-1;489:4:5;;366:132::o",
-  "source": "pragma solidity ^0.4.23;\n\nimport \"./PensionLib.sol\";\n\ncontract PensionSettings {\n  function getPensionFactor(PensionLib.PensionType _pensionType) public pure returns (uint256) {\n    //scaled to 100%\n    return 100;\n  }\n\n  //TODO: rename to \"getPensionPointValue\"\n  function getPensionAmount(uint16 _year) public view returns (uint256) {\n    return 29*10**18;\n  }\n\n  function getPensionSalaryPercentage(uint16 _year) public pure returns (uint256) {\n    //18,6 % //scaled to 100%\n    return 1860;\n  }\n\n  //TODO: \"Income\" or \"Salary\".\n  function getAverageIncomeByYear(uint16 _year) public pure returns (uint256) {\n    return (2500 * 10 ** 18) * 12;\n  }\n\n  function getPensionPointPrecision() public pure returns (uint _precision){\n    return 1000;\n  }\n}\n",
-  "sourcePath": "C:\\git\\german-pension\\packages\\smartcontracts\\contracts\\PensionSettings.sol",
+  "bytecode": "0x608060405234801561001057600080fd5b50610163806100206000396000f30060806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166320ccd9a28114610071578063442172121461009e578063961a04fa146100ba57806397191019146100cf578063a66fbd0e146100eb575b600080fd5b34801561007d57600080fd5b5061008c60ff60043516610107565b60408051918252519081900360200190f35b3480156100aa57600080fd5b5061008c61ffff6004351661010d565b3480156100c657600080fd5b5061008c61011b565b3480156100db57600080fd5b5061008c61ffff60043516610121565b3480156100f757600080fd5b5061008c61ffff60043516610130565b50606490565b5068019274b259f654000090565b6103e890565b5069065a4da25d3016c0000090565b50610744905600a165627a7a723058205788551ddba6ff68e9939b801be216456093a288e5bb5d04ad73d4d55ee00fad0029",
+  "deployedBytecode": "0x60806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166320ccd9a28114610071578063442172121461009e578063961a04fa146100ba57806397191019146100cf578063a66fbd0e146100eb575b600080fd5b34801561007d57600080fd5b5061008c60ff60043516610107565b60408051918252519081900360200190f35b3480156100aa57600080fd5b5061008c61ffff6004351661010d565b3480156100c657600080fd5b5061008c61011b565b3480156100db57600080fd5b5061008c61ffff60043516610121565b3480156100f757600080fd5b5061008c61ffff60043516610130565b50606490565b5068019274b259f654000090565b6103e890565b5069065a4da25d3016c0000090565b50610744905600a165627a7a723058205788551ddba6ff68e9939b801be216456093a288e5bb5d04ad73d4d55ee00fad0029",
+  "sourceMap": "58:721:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;58:721:7;;;;;;;",
+  "deployedSourceMap": "58:721:7:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;88:138;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;88:138:7;;;;;;;;;;;;;;;;;;;;;;;276:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;276:99:7;;;;;;;679:97;;8:9:-1;5:2;;;30:1;27;20:12;5:2;679:97:7;;;;555:118;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;555:118:7;;;;;;;381:135;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;381:135:7;;;;;;;88:138;-1:-1:-1;217:3:7;;88:138::o;276:99::-;-1:-1:-1;360:9:7;;276:99::o;679:97::-;766:4;679:97;:::o;555:118::-;-1:-1:-1;645:22:7;;555:118::o;381:135::-;-1:-1:-1;506:4:7;;381:135::o",
+  "source": "pragma solidity ^0.4.23;\r\n\r\nimport \"./PensionLib.sol\";\r\n\r\ncontract PensionSettings {\r\n  function getPensionFactor(PensionLib.PensionType _pensionType) public pure returns (uint256) {\r\n    //scaled to 100%\r\n    return 100;\r\n  }\r\n\r\n  //TODO: rename to \"getPensionPointValue\"\r\n  function getPensionAmount(uint16 _year) public view returns (uint256) {\r\n    return 29*10**18;\r\n  }\r\n\r\n  function getPensionSalaryPercentage(uint16 _year) public pure returns (uint256) {\r\n    //18,6 % //scaled to 100%\r\n    return 1860;\r\n  }\r\n\r\n  //TODO: \"Income\" or \"Salary\".\r\n  function getAverageIncomeByYear(uint16 _year) public pure returns (uint256) {\r\n    return (2500 * 10 ** 18) * 12;\r\n  }\r\n\r\n  function getPensionPointPrecision() public pure returns (uint _precision){\r\n    return 1000;\r\n  }\r\n}\r\n",
+  "sourcePath": "C:\\git\\asure-dapp\\packages\\smartcontracts\\contracts\\PensionSettings.sol",
   "ast": {
-    "absolutePath": "/C/git/german-pension/packages/smartcontracts/contracts/PensionSettings.sol",
+    "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionSettings.sol",
     "exportedSymbols": {
       "PensionSettings": [
-        1565
+        1699
       ]
     },
-    "id": 1566,
+    "id": 1700,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1504,
+        "id": 1638,
         "literals": [
           "solidity",
           "^",
@@ -117,16 +117,16 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:5"
+        "src": "0:24:7"
       },
       {
-        "absolutePath": "/C/git/german-pension/packages/smartcontracts/contracts/PensionLib.sol",
+        "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionLib.sol",
         "file": "./PensionLib.sol",
-        "id": 1505,
+        "id": 1639,
         "nodeType": "ImportDirective",
-        "scope": 1566,
-        "sourceUnit": 1081,
-        "src": "26:26:5",
+        "scope": 1700,
+        "sourceUnit": 1215,
+        "src": "28:26:7",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -136,31 +136,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1565,
+        "id": 1699,
         "linearizedBaseContracts": [
-          1565
+          1699
         ],
         "name": "PensionSettings",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1514,
+              "id": 1648,
               "nodeType": "Block",
-              "src": "176:42:5",
+              "src": "181:45:7",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "313030",
-                    "id": 1512,
+                    "id": 1646,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "210:3:5",
+                    "src": "217:3:7",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_100_by_1",
@@ -168,15 +168,15 @@
                     },
                     "value": "100"
                   },
-                  "functionReturnParameters": 1511,
-                  "id": 1513,
+                  "functionReturnParameters": 1645,
+                  "id": 1647,
                   "nodeType": "Return",
-                  "src": "203:10:5"
+                  "src": "210:10:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1515,
+            "id": 1649,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -184,31 +184,31 @@
             "name": "getPensionFactor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1508,
+              "id": 1642,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1507,
+                  "id": 1641,
                   "name": "_pensionType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1515,
-                  "src": "109:35:5",
+                  "scope": 1649,
+                  "src": "114:35:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_PensionType_$1068",
+                    "typeIdentifier": "t_enum$_PensionType_$1202",
                     "typeString": "enum PensionLib.PensionType"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 1506,
+                    "id": 1640,
                     "name": "PensionLib.PensionType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1068,
-                    "src": "109:22:5",
+                    "referencedDeclaration": 1202,
+                    "src": "114:22:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_PensionType_$1068",
+                      "typeIdentifier": "t_enum$_PensionType_$1202",
                       "typeString": "enum PensionLib.PensionType"
                     }
                   },
@@ -216,20 +216,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "108:37:5"
+              "src": "113:37:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1511,
+              "id": 1645,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1510,
+                  "id": 1644,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1515,
-                  "src": "167:7:5",
+                  "scope": 1649,
+                  "src": "172:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -237,10 +237,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1509,
+                    "id": 1643,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "167:7:5",
+                    "src": "172:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -250,19 +250,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "166:9:5"
+              "src": "171:9:7"
             },
-            "scope": 1565,
-            "src": "83:135:5",
+            "scope": 1699,
+            "src": "88:138:7",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1528,
+              "id": 1662,
               "nodeType": "Block",
-              "src": "335:27:5",
+              "src": "346:29:7",
               "statements": [
                 {
                   "expression": {
@@ -271,7 +271,7 @@
                       "typeIdentifier": "t_rational_29000000000000000000_by_1",
                       "typeString": "int_const 29000000000000000000"
                     },
-                    "id": 1526,
+                    "id": 1660,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -279,14 +279,14 @@
                     "leftExpression": {
                       "argumentTypes": null,
                       "hexValue": "3239",
-                      "id": 1522,
+                      "id": 1656,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "348:2:5",
+                      "src": "360:2:7",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_29_by_1",
@@ -302,7 +302,7 @@
                         "typeIdentifier": "t_rational_1000000000000000000_by_1",
                         "typeString": "int_const 1000000000000000000"
                       },
-                      "id": 1525,
+                      "id": 1659,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -310,14 +310,14 @@
                       "leftExpression": {
                         "argumentTypes": null,
                         "hexValue": "3130",
-                        "id": 1523,
+                        "id": 1657,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "351:2:5",
+                        "src": "363:2:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_10_by_1",
@@ -330,14 +330,14 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "3138",
-                        "id": 1524,
+                        "id": 1658,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "355:2:5",
+                        "src": "367:2:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_18_by_1",
@@ -345,27 +345,27 @@
                         },
                         "value": "18"
                       },
-                      "src": "351:6:5",
+                      "src": "363:6:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1000000000000000000_by_1",
                         "typeString": "int_const 1000000000000000000"
                       }
                     },
-                    "src": "348:9:5",
+                    "src": "360:9:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_29000000000000000000_by_1",
                       "typeString": "int_const 29000000000000000000"
                     }
                   },
-                  "functionReturnParameters": 1521,
-                  "id": 1527,
+                  "functionReturnParameters": 1655,
+                  "id": 1661,
                   "nodeType": "Return",
-                  "src": "341:16:5"
+                  "src": "353:16:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1529,
+            "id": 1663,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -373,16 +373,16 @@
             "name": "getPensionAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1518,
+              "id": 1652,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1517,
+                  "id": 1651,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1529,
-                  "src": "291:12:5",
+                  "scope": 1663,
+                  "src": "302:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -390,10 +390,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1516,
+                    "id": 1650,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "291:6:5",
+                    "src": "302:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -403,20 +403,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "290:14:5"
+              "src": "301:14:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1521,
+              "id": 1655,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1520,
+                  "id": 1654,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1529,
-                  "src": "326:7:5",
+                  "scope": 1663,
+                  "src": "337:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -424,10 +424,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1519,
+                    "id": 1653,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "326:7:5",
+                    "src": "337:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -437,32 +437,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "325:9:5"
+              "src": "336:9:7"
             },
-            "scope": 1565,
-            "src": "265:97:5",
+            "scope": 1699,
+            "src": "276:99:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1538,
+              "id": 1672,
               "nodeType": "Block",
-              "src": "446:52:5",
+              "src": "461:55:7",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31383630",
-                    "id": 1536,
+                    "id": 1670,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "489:4:5",
+                    "src": "506:4:7",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_1860_by_1",
@@ -470,15 +470,15 @@
                     },
                     "value": "1860"
                   },
-                  "functionReturnParameters": 1535,
-                  "id": 1537,
+                  "functionReturnParameters": 1669,
+                  "id": 1671,
                   "nodeType": "Return",
-                  "src": "482:11:5"
+                  "src": "499:11:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1539,
+            "id": 1673,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -486,16 +486,16 @@
             "name": "getPensionSalaryPercentage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1532,
+              "id": 1666,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1531,
+                  "id": 1665,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1539,
-                  "src": "402:12:5",
+                  "scope": 1673,
+                  "src": "417:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -503,10 +503,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1530,
+                    "id": 1664,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "402:6:5",
+                    "src": "417:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -516,20 +516,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "401:14:5"
+              "src": "416:14:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1535,
+              "id": 1669,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1534,
+                  "id": 1668,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1539,
-                  "src": "437:7:5",
+                  "scope": 1673,
+                  "src": "452:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -537,10 +537,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1533,
+                    "id": 1667,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "437:7:5",
+                    "src": "452:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -550,19 +550,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "436:9:5"
+              "src": "451:9:7"
             },
-            "scope": 1565,
-            "src": "366:132:5",
+            "scope": 1699,
+            "src": "381:135:7",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1555,
+              "id": 1689,
               "nodeType": "Block",
-              "src": "610:40:5",
+              "src": "631:42:7",
               "statements": [
                 {
                   "expression": {
@@ -571,7 +571,7 @@
                       "typeIdentifier": "t_rational_30000000000000000000000_by_1",
                       "typeString": "int_const 30000000000000000000000"
                     },
-                    "id": 1553,
+                    "id": 1687,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -585,7 +585,7 @@
                             "typeIdentifier": "t_rational_2500000000000000000000_by_1",
                             "typeString": "int_const 2500000000000000000000"
                           },
-                          "id": 1550,
+                          "id": 1684,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -593,14 +593,14 @@
                           "leftExpression": {
                             "argumentTypes": null,
                             "hexValue": "32353030",
-                            "id": 1546,
+                            "id": 1680,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "624:4:5",
+                            "src": "646:4:7",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_2500_by_1",
@@ -616,7 +616,7 @@
                               "typeIdentifier": "t_rational_1000000000000000000_by_1",
                               "typeString": "int_const 1000000000000000000"
                             },
-                            "id": 1549,
+                            "id": 1683,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -624,14 +624,14 @@
                             "leftExpression": {
                               "argumentTypes": null,
                               "hexValue": "3130",
-                              "id": 1547,
+                              "id": 1681,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "631:2:5",
+                              "src": "653:2:7",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_10_by_1",
@@ -644,14 +644,14 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "3138",
-                              "id": 1548,
+                              "id": 1682,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "637:2:5",
+                              "src": "659:2:7",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_18_by_1",
@@ -659,27 +659,27 @@
                               },
                               "value": "18"
                             },
-                            "src": "631:8:5",
+                            "src": "653:8:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_1000000000000000000_by_1",
                               "typeString": "int_const 1000000000000000000"
                             }
                           },
-                          "src": "624:15:5",
+                          "src": "646:15:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_2500000000000000000000_by_1",
                             "typeString": "int_const 2500000000000000000000"
                           }
                         }
                       ],
-                      "id": 1551,
+                      "id": 1685,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "nodeType": "TupleExpression",
-                      "src": "623:17:5",
+                      "src": "645:17:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_2500000000000000000000_by_1",
                         "typeString": "int_const 2500000000000000000000"
@@ -690,14 +690,14 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "3132",
-                      "id": 1552,
+                      "id": 1686,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "643:2:5",
+                      "src": "665:2:7",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_12_by_1",
@@ -705,21 +705,21 @@
                       },
                       "value": "12"
                     },
-                    "src": "623:22:5",
+                    "src": "645:22:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_30000000000000000000000_by_1",
                       "typeString": "int_const 30000000000000000000000"
                     }
                   },
-                  "functionReturnParameters": 1545,
-                  "id": 1554,
+                  "functionReturnParameters": 1679,
+                  "id": 1688,
                   "nodeType": "Return",
-                  "src": "616:29:5"
+                  "src": "638:29:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1556,
+            "id": 1690,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -727,16 +727,16 @@
             "name": "getAverageIncomeByYear",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1542,
+              "id": 1676,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1541,
+                  "id": 1675,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1556,
-                  "src": "566:12:5",
+                  "scope": 1690,
+                  "src": "587:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -744,10 +744,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1540,
+                    "id": 1674,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "566:6:5",
+                    "src": "587:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -757,20 +757,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "565:14:5"
+              "src": "586:14:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1545,
+              "id": 1679,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1544,
+                  "id": 1678,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1556,
-                  "src": "601:7:5",
+                  "scope": 1690,
+                  "src": "622:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -778,10 +778,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1543,
+                    "id": 1677,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "601:7:5",
+                    "src": "622:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -791,32 +791,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "600:9:5"
+              "src": "621:9:7"
             },
-            "scope": 1565,
-            "src": "534:116:5",
+            "scope": 1699,
+            "src": "555:118:7",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1563,
+              "id": 1697,
               "nodeType": "Block",
-              "src": "727:22:5",
+              "src": "752:24:7",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31303030",
-                    "id": 1561,
+                    "id": 1695,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "740:4:5",
+                    "src": "766:4:7",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_1000_by_1",
@@ -824,15 +824,15 @@
                     },
                     "value": "1000"
                   },
-                  "functionReturnParameters": 1560,
-                  "id": 1562,
+                  "functionReturnParameters": 1694,
+                  "id": 1696,
                   "nodeType": "Return",
-                  "src": "733:11:5"
+                  "src": "759:11:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1564,
+            "id": 1698,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -840,23 +840,23 @@
             "name": "getPensionPointPrecision",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1557,
+              "id": 1691,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "687:2:5"
+              "src": "712:2:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1560,
+              "id": 1694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1559,
+                  "id": 1693,
                   "name": "_precision",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1564,
-                  "src": "711:15:5",
+                  "scope": 1698,
+                  "src": "736:15:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -864,10 +864,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1558,
+                    "id": 1692,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "711:4:5",
+                    "src": "736:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -877,33 +877,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "710:17:5"
+              "src": "735:17:7"
             },
-            "scope": 1565,
-            "src": "654:95:5",
+            "scope": 1699,
+            "src": "679:97:7",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1566,
-        "src": "54:697:5"
+        "scope": 1700,
+        "src": "58:721:7"
       }
     ],
-    "src": "0:752:5"
+    "src": "0:781:7"
   },
   "legacyAST": {
-    "absolutePath": "/C/git/german-pension/packages/smartcontracts/contracts/PensionSettings.sol",
+    "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionSettings.sol",
     "exportedSymbols": {
       "PensionSettings": [
-        1565
+        1699
       ]
     },
-    "id": 1566,
+    "id": 1700,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1504,
+        "id": 1638,
         "literals": [
           "solidity",
           "^",
@@ -911,16 +911,16 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:5"
+        "src": "0:24:7"
       },
       {
-        "absolutePath": "/C/git/german-pension/packages/smartcontracts/contracts/PensionLib.sol",
+        "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionLib.sol",
         "file": "./PensionLib.sol",
-        "id": 1505,
+        "id": 1639,
         "nodeType": "ImportDirective",
-        "scope": 1566,
-        "sourceUnit": 1081,
-        "src": "26:26:5",
+        "scope": 1700,
+        "sourceUnit": 1215,
+        "src": "28:26:7",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -930,31 +930,31 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1565,
+        "id": 1699,
         "linearizedBaseContracts": [
-          1565
+          1699
         ],
         "name": "PensionSettings",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1514,
+              "id": 1648,
               "nodeType": "Block",
-              "src": "176:42:5",
+              "src": "181:45:7",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "313030",
-                    "id": 1512,
+                    "id": 1646,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "210:3:5",
+                    "src": "217:3:7",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_100_by_1",
@@ -962,15 +962,15 @@
                     },
                     "value": "100"
                   },
-                  "functionReturnParameters": 1511,
-                  "id": 1513,
+                  "functionReturnParameters": 1645,
+                  "id": 1647,
                   "nodeType": "Return",
-                  "src": "203:10:5"
+                  "src": "210:10:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1515,
+            "id": 1649,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -978,31 +978,31 @@
             "name": "getPensionFactor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1508,
+              "id": 1642,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1507,
+                  "id": 1641,
                   "name": "_pensionType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1515,
-                  "src": "109:35:5",
+                  "scope": 1649,
+                  "src": "114:35:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_PensionType_$1068",
+                    "typeIdentifier": "t_enum$_PensionType_$1202",
                     "typeString": "enum PensionLib.PensionType"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 1506,
+                    "id": 1640,
                     "name": "PensionLib.PensionType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1068,
-                    "src": "109:22:5",
+                    "referencedDeclaration": 1202,
+                    "src": "114:22:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_PensionType_$1068",
+                      "typeIdentifier": "t_enum$_PensionType_$1202",
                       "typeString": "enum PensionLib.PensionType"
                     }
                   },
@@ -1010,20 +1010,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "108:37:5"
+              "src": "113:37:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1511,
+              "id": 1645,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1510,
+                  "id": 1644,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1515,
-                  "src": "167:7:5",
+                  "scope": 1649,
+                  "src": "172:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1031,10 +1031,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1509,
+                    "id": 1643,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "167:7:5",
+                    "src": "172:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1044,19 +1044,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "166:9:5"
+              "src": "171:9:7"
             },
-            "scope": 1565,
-            "src": "83:135:5",
+            "scope": 1699,
+            "src": "88:138:7",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1528,
+              "id": 1662,
               "nodeType": "Block",
-              "src": "335:27:5",
+              "src": "346:29:7",
               "statements": [
                 {
                   "expression": {
@@ -1065,7 +1065,7 @@
                       "typeIdentifier": "t_rational_29000000000000000000_by_1",
                       "typeString": "int_const 29000000000000000000"
                     },
-                    "id": 1526,
+                    "id": 1660,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1073,14 +1073,14 @@
                     "leftExpression": {
                       "argumentTypes": null,
                       "hexValue": "3239",
-                      "id": 1522,
+                      "id": 1656,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "348:2:5",
+                      "src": "360:2:7",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_29_by_1",
@@ -1096,7 +1096,7 @@
                         "typeIdentifier": "t_rational_1000000000000000000_by_1",
                         "typeString": "int_const 1000000000000000000"
                       },
-                      "id": 1525,
+                      "id": 1659,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1104,14 +1104,14 @@
                       "leftExpression": {
                         "argumentTypes": null,
                         "hexValue": "3130",
-                        "id": 1523,
+                        "id": 1657,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "351:2:5",
+                        "src": "363:2:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_10_by_1",
@@ -1124,14 +1124,14 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "3138",
-                        "id": 1524,
+                        "id": 1658,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "number",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "355:2:5",
+                        "src": "367:2:7",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_rational_18_by_1",
@@ -1139,27 +1139,27 @@
                         },
                         "value": "18"
                       },
-                      "src": "351:6:5",
+                      "src": "363:6:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_1000000000000000000_by_1",
                         "typeString": "int_const 1000000000000000000"
                       }
                     },
-                    "src": "348:9:5",
+                    "src": "360:9:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_29000000000000000000_by_1",
                       "typeString": "int_const 29000000000000000000"
                     }
                   },
-                  "functionReturnParameters": 1521,
-                  "id": 1527,
+                  "functionReturnParameters": 1655,
+                  "id": 1661,
                   "nodeType": "Return",
-                  "src": "341:16:5"
+                  "src": "353:16:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1529,
+            "id": 1663,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1167,16 +1167,16 @@
             "name": "getPensionAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1518,
+              "id": 1652,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1517,
+                  "id": 1651,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1529,
-                  "src": "291:12:5",
+                  "scope": 1663,
+                  "src": "302:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1184,10 +1184,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1516,
+                    "id": 1650,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "291:6:5",
+                    "src": "302:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -1197,20 +1197,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "290:14:5"
+              "src": "301:14:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1521,
+              "id": 1655,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1520,
+                  "id": 1654,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1529,
-                  "src": "326:7:5",
+                  "scope": 1663,
+                  "src": "337:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1218,10 +1218,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1519,
+                    "id": 1653,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "326:7:5",
+                    "src": "337:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1231,32 +1231,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "325:9:5"
+              "src": "336:9:7"
             },
-            "scope": 1565,
-            "src": "265:97:5",
+            "scope": 1699,
+            "src": "276:99:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1538,
+              "id": 1672,
               "nodeType": "Block",
-              "src": "446:52:5",
+              "src": "461:55:7",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31383630",
-                    "id": 1536,
+                    "id": 1670,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "489:4:5",
+                    "src": "506:4:7",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_1860_by_1",
@@ -1264,15 +1264,15 @@
                     },
                     "value": "1860"
                   },
-                  "functionReturnParameters": 1535,
-                  "id": 1537,
+                  "functionReturnParameters": 1669,
+                  "id": 1671,
                   "nodeType": "Return",
-                  "src": "482:11:5"
+                  "src": "499:11:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1539,
+            "id": 1673,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1280,16 +1280,16 @@
             "name": "getPensionSalaryPercentage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1532,
+              "id": 1666,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1531,
+                  "id": 1665,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1539,
-                  "src": "402:12:5",
+                  "scope": 1673,
+                  "src": "417:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1297,10 +1297,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1530,
+                    "id": 1664,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "402:6:5",
+                    "src": "417:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -1310,20 +1310,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "401:14:5"
+              "src": "416:14:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1535,
+              "id": 1669,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1534,
+                  "id": 1668,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1539,
-                  "src": "437:7:5",
+                  "scope": 1673,
+                  "src": "452:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1331,10 +1331,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1533,
+                    "id": 1667,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "437:7:5",
+                    "src": "452:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1344,19 +1344,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "436:9:5"
+              "src": "451:9:7"
             },
-            "scope": 1565,
-            "src": "366:132:5",
+            "scope": 1699,
+            "src": "381:135:7",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1555,
+              "id": 1689,
               "nodeType": "Block",
-              "src": "610:40:5",
+              "src": "631:42:7",
               "statements": [
                 {
                   "expression": {
@@ -1365,7 +1365,7 @@
                       "typeIdentifier": "t_rational_30000000000000000000000_by_1",
                       "typeString": "int_const 30000000000000000000000"
                     },
-                    "id": 1553,
+                    "id": 1687,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1379,7 +1379,7 @@
                             "typeIdentifier": "t_rational_2500000000000000000000_by_1",
                             "typeString": "int_const 2500000000000000000000"
                           },
-                          "id": 1550,
+                          "id": 1684,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1387,14 +1387,14 @@
                           "leftExpression": {
                             "argumentTypes": null,
                             "hexValue": "32353030",
-                            "id": 1546,
+                            "id": 1680,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "624:4:5",
+                            "src": "646:4:7",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_2500_by_1",
@@ -1410,7 +1410,7 @@
                               "typeIdentifier": "t_rational_1000000000000000000_by_1",
                               "typeString": "int_const 1000000000000000000"
                             },
-                            "id": 1549,
+                            "id": 1683,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1418,14 +1418,14 @@
                             "leftExpression": {
                               "argumentTypes": null,
                               "hexValue": "3130",
-                              "id": 1547,
+                              "id": 1681,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "631:2:5",
+                              "src": "653:2:7",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_10_by_1",
@@ -1438,14 +1438,14 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "3138",
-                              "id": 1548,
+                              "id": 1682,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "637:2:5",
+                              "src": "659:2:7",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_18_by_1",
@@ -1453,27 +1453,27 @@
                               },
                               "value": "18"
                             },
-                            "src": "631:8:5",
+                            "src": "653:8:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_1000000000000000000_by_1",
                               "typeString": "int_const 1000000000000000000"
                             }
                           },
-                          "src": "624:15:5",
+                          "src": "646:15:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_rational_2500000000000000000000_by_1",
                             "typeString": "int_const 2500000000000000000000"
                           }
                         }
                       ],
-                      "id": 1551,
+                      "id": 1685,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "nodeType": "TupleExpression",
-                      "src": "623:17:5",
+                      "src": "645:17:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_2500000000000000000000_by_1",
                         "typeString": "int_const 2500000000000000000000"
@@ -1484,14 +1484,14 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "3132",
-                      "id": 1552,
+                      "id": 1686,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "643:2:5",
+                      "src": "665:2:7",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_12_by_1",
@@ -1499,21 +1499,21 @@
                       },
                       "value": "12"
                     },
-                    "src": "623:22:5",
+                    "src": "645:22:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_30000000000000000000000_by_1",
                       "typeString": "int_const 30000000000000000000000"
                     }
                   },
-                  "functionReturnParameters": 1545,
-                  "id": 1554,
+                  "functionReturnParameters": 1679,
+                  "id": 1688,
                   "nodeType": "Return",
-                  "src": "616:29:5"
+                  "src": "638:29:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1556,
+            "id": 1690,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1521,16 +1521,16 @@
             "name": "getAverageIncomeByYear",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1542,
+              "id": 1676,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1541,
+                  "id": 1675,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1556,
-                  "src": "566:12:5",
+                  "scope": 1690,
+                  "src": "587:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1538,10 +1538,10 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1540,
+                    "id": 1674,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
-                    "src": "566:6:5",
+                    "src": "587:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint16",
                       "typeString": "uint16"
@@ -1551,20 +1551,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "565:14:5"
+              "src": "586:14:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1545,
+              "id": 1679,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1544,
+                  "id": 1678,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1556,
-                  "src": "601:7:5",
+                  "scope": 1690,
+                  "src": "622:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1572,10 +1572,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1543,
+                    "id": 1677,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "601:7:5",
+                    "src": "622:7:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1585,32 +1585,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "600:9:5"
+              "src": "621:9:7"
             },
-            "scope": 1565,
-            "src": "534:116:5",
+            "scope": 1699,
+            "src": "555:118:7",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 1563,
+              "id": 1697,
               "nodeType": "Block",
-              "src": "727:22:5",
+              "src": "752:24:7",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31303030",
-                    "id": 1561,
+                    "id": 1695,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "number",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "740:4:5",
+                    "src": "766:4:7",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_rational_1000_by_1",
@@ -1618,15 +1618,15 @@
                     },
                     "value": "1000"
                   },
-                  "functionReturnParameters": 1560,
-                  "id": 1562,
+                  "functionReturnParameters": 1694,
+                  "id": 1696,
                   "nodeType": "Return",
-                  "src": "733:11:5"
+                  "src": "759:11:7"
                 }
               ]
             },
             "documentation": null,
-            "id": 1564,
+            "id": 1698,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1634,23 +1634,23 @@
             "name": "getPensionPointPrecision",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1557,
+              "id": 1691,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "687:2:5"
+              "src": "712:2:7"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1560,
+              "id": 1694,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1559,
+                  "id": 1693,
                   "name": "_precision",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1564,
-                  "src": "711:15:5",
+                  "scope": 1698,
+                  "src": "736:15:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1658,10 +1658,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1558,
+                    "id": 1692,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "711:4:5",
+                    "src": "736:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1671,20 +1671,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "710:17:5"
+              "src": "735:17:7"
             },
-            "scope": 1565,
-            "src": "654:95:5",
+            "scope": 1699,
+            "src": "679:97:7",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1566,
-        "src": "54:697:5"
+        "scope": 1700,
+        "src": "58:721:7"
       }
     ],
-    "src": "0:752:5"
+    "src": "0:781:7"
   },
   "compiler": {
     "name": "solc",
@@ -1694,8 +1694,8 @@
     "4": {
       "events": {},
       "links": {},
-      "address": "0xbba5941f21b176435a2f69b3b3ad6a166ebeb309",
-      "transactionHash": "0x7c6cdbfe86537e68f04f0cd7d3271fa2109ef1c4fe674181f8a2dc186c3c06e4"
+      "address": "0x536233da9707ac523800abdb46adcb709684961e",
+      "transactionHash": "0x55a5d4d3548137de41039f899670d0334050302c86003a0469f35ee150fb7c47"
     },
     "1234567890": {
       "events": {},
@@ -1831,5 +1831,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-13T17:59:00.115Z"
+  "updatedAt": "2018-08-13T20:29:40.834Z"
 }

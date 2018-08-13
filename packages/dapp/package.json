@@ -2,6 +2,8 @@
   "name": "dapp",
   "version": "0.8.13",
   "private": true,
+  "author": "Asure Foundation <info@asure.io>",
+  "license": "ISC",
   "dependencies": {
     "antd-mobile": "^2.2.2",
     "bip39": "^2.5.0",

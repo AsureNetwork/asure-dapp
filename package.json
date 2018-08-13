@@ -8,6 +8,7 @@
     "start-smartcontracts": "npm run --prefix packages/smartcontracts start",
     "start-dapp": "npm run --prefix packages/dapp start",
     "format": "pretty-quick",
+    "build": "lerna run build",
     "postinstall": "npm run bootstrap",
     "precommit": "pretty-quick --staged",
     "postcommit": "git update-index --again"

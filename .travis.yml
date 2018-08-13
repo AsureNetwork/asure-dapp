@@ -9,6 +9,6 @@ cache:
     - packages/*/node_modules
 before_install:
   - npm install -g npm
+  - npm --version
 script:
-  - npm run --prefix packages/smartcontracts build
-  - npm run --prefix packages/dapp build
+  - npm run build

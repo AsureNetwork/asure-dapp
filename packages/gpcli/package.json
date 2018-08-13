@@ -1,0 +1,28 @@
+{
+  "name": "gpcli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "gpcli": "src/cli.js"
+  },
+  "scripts": {
+    "gpcli": "node ./src/cli.js",
+    "deploy-dev": "./scripts/deploy-test-data.sh development",
+    "deploy-rinkeby": "./scripts/deploy-test-data.sh rinkeby"
+  },
+  "main": "./src/index.js",
+  "keywords": [],
+  "author": "Fabian Raetz <fraetz@asure.io>",
+  "license": "ISC",
+  "dependencies": {
+    "bip39": "^2.5.0",
+    "commander": "^2.16.0",
+    "dotenv": "^6.0.0",
+    "dotenv-expand": "^4.2.0",
+    "ethereumjs-wallet": "0.6.0",
+    "moment": "^2.22.2",
+    "smartcontracts": "*",
+    "web3": "^1.0.0-beta.35",
+    "web3-provider-engine": "^14.0.6"
+  }
+}

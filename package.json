@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "german-pension",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start-smartcontracts": "npm run --prefix packages/smartcontracts start",
+    "start-dapp": "npm run --prefix packages/dapp start",
+    "format": "pretty-quick",
+    "precommit": "pretty-quick --staged",
+    "postcommit": "git update-index --again"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://echtnice@vs-ssh.visualstudio.com:22/german-pension/_ssh/german-pension"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lerna": "^2.11.0",
+    "prettier": "^1.13.7",
+    "pretty-quick": "^1.6.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {}
+}

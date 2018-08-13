@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "name": "smartcontracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "ganache-cli": "^6.1.6",
+    "truffle": "^4.1.13",
+    "truffle-hdwallet-provider": "0.0.5"
+  },
+  "scripts": {
+    "start": "npm run ganache-ext",
+    "build": "truffle compile",
+    "migrate-dev": "truffle migrate --reset",
+    "migrate-rinkeby": "truffle migrate --reset --network rinkeby",
+    "test": "truffle test",
+    "test-integration": "truffle test ./test-integration/integration.js",
+    "test-all": "truffle test && truffle test ./test-integration/integration.js",
+    "ganache": "node ./scripts/ganache.js",
+    "ganache-ext": "node ./scripts/ganache.js --migrate --deploy-test-data"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-expand": "^4.2.0",
+    "openzeppelin-solidity": "^1.11.0"
+  }
+}

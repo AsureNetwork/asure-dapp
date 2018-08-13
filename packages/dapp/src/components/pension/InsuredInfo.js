@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { List, Picker, WhiteSpace } from 'antd-mobile';
-import { ContractData } from 'drizzle-react-components';
 import { drizzleConnect } from 'drizzle-react';
 import PropTypes from 'prop-types';
 import { Calendar, CompassIco, Notes } from '../../thumbs';

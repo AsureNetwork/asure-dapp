@@ -14,7 +14,7 @@ class Overview extends Component {
   ];
 
   navigateTo = category => {
-    if (category.path != 'notyet') {
+    if (category.path !== 'notyet') {
       this.props.history.push(`${this.props.match.url}/${category.path}`);
     } else {
       Toast.info('just for demonstration purposes', 1);

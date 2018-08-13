@@ -21,16 +21,6 @@ import EthIcon from '../extensions/EthIcon';
 import { createForm } from 'rc-form';
 import { getParams } from '../../utils/getParams';
 
-const isIPhone = new RegExp('\\biPhone\\b|\\biPod\\b', 'i').test(
-  window.navigator.userAgent
-);
-let wrapProps;
-if (isIPhone) {
-  wrapProps = {
-    onTouchStart: e => e.preventDefault()
-  };
-}
-
 class Send extends React.Component {
   static contextTypes = {
     drizzle: PropTypes.object
@@ -53,7 +43,7 @@ class Send extends React.Component {
 
     let step = 0;
     if (params.step) {
-      step = parseInt(params.step);
+      step = parseInt(params.step, 10);
     }
 
     let amount = 0;
@@ -256,7 +246,7 @@ class Send extends React.Component {
   }
 
   send() {
-    if (this.state.currency == 'ETH') {
+    if (this.state.currency === 'ETH') {
     } else {
     }
 

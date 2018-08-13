@@ -91,7 +91,7 @@ class Main extends React.Component {
   };
 
   navigate = path => {
-    if (path != this.props.history.location.pathname) {
+    if (path !== this.props.history.location.pathname) {
       this.props.history.push(path);
     }
   };

@@ -11,16 +11,20 @@ export function getParams(props) {
     // split our query string into its component parts
     var arr = queryString.split('&');
 
+    var paramNum = undefined;
+
+    var replaceFn = v => {
+      paramNum = v.slice(1, -1);
+      return '';
+    };
+
     for (var i = 0; i < arr.length; i++) {
       // separate the keys and the values
       var a = arr[i].split('=');
 
       // in case params look like: list[]=thing1&list[]=thing2
-      var paramNum = undefined;
-      var paramName = a[0].replace(/\[\d*\]/, v => {
-        paramNum = v.slice(1, -1);
-        return '';
-      });
+      paramNum = undefined;
+      var paramName = a[0].replace(/\[\d*s\]/, replaceFn);
 
       // set parameter value (use 'true' if empty)
       var paramValue = typeof a[1] === 'undefined' ? true : a[1];

@@ -7,7 +7,6 @@ import { PensionFormula } from './PensionFormula';
 import { withRouter } from 'react-router';
 import moment from 'moment';
 import { formatEurAsWei } from '../../utils/formatEur';
-import { getCurrentAccount } from '../../reducers/account';
 
 class PensionSimulation extends React.Component {
   static contextTypes = {
@@ -156,7 +155,7 @@ class PensionSimulation extends React.Component {
         {
           text: 'OK',
           onPress: amount => {
-            const amountAsNumber = parseInt(amount);
+            const amountAsNumber = parseInt(amount, 10);
 
             if (!/^\d+(\.\d{0,2})?$/.test(amount) || isNaN(amountAsNumber)) {
               Toast.info('Invalid salary.', 1);

@@ -28,7 +28,7 @@ class History extends React.Component {
       txList: [],
       txListInternal: [],
       tokenTx: [],
-      selectedItem: new Object(),
+      selectedItem: {},
       showModal: false
     };
   }
@@ -116,7 +116,7 @@ class History extends React.Component {
 
   getCurrency(item) {
     if (item.contractAddress) {
-      if (item.tokenSymbol && item.tokenSymbol != '') {
+      if (item.tokenSymbol && item.tokenSymbol !== '') {
         return item.tokenSymbol;
       } else {
         return 'ERC20';

@@ -70,6 +70,7 @@ export class Privacy extends React.Component {
               <a
                 href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 https://www.bfdi.bund.de
               </a>.

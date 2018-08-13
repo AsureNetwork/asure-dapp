@@ -42,7 +42,7 @@ class PensionPlanItem extends PureComponent {
         {
           text: 'Pay',
           onPress: amount => {
-            const amountAsNumber = parseInt(amount);
+            const amountAsNumber = parseInt(amount, 10);
 
             if (!/^\d+(\.\d{0,2})?$/.test(amount) || isNaN(amountAsNumber)) {
               Toast.info('Invalid amount.', 1);

@@ -23,11 +23,11 @@ is very welcome.
 ## Quick Overview
 
 ```sh
-# We require a recent npm and lerna to be installed
-# globally.
-npm i -g npm lerna
+# We require a recent version of  npm.
+npm install -g npm
 
-lerna bootstrap
+# Install dependencies.
+npm  install
 
 # Start Ganache. Ganache will deploy all smart
 # contracts and test data.  This will take a

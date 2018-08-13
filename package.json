@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://echtnice@vs-ssh.visualstudio.com:22/german-pension/_ssh/german-pension"
+    "url": "https://github.com/AsureFoundation/asure-dapp"
   },
   "keywords": [],
   "author": "",

@@ -25,7 +25,7 @@
     "ganache-ext": "node ./scripts/ganache.js --migrate --deploy-test-data"
   },
   "keywords": [],
-  "author": "",
+  "author": "Asure Foundation <info@asure.io>",
   "license": "ISC",
   "dependencies": {
     "dotenv-expand": "^4.2.0",

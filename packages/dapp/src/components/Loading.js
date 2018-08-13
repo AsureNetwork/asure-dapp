@@ -76,7 +76,8 @@ class Loading extends Component {
         <WingBlank size="md">
           <div style={{ textAlign: 'center', padding: '30% 0 0 0' }}>
             <AppLogo styleName="lg" />
-            <h1 className="title">ASURE App</h1>
+            <h1 className="title">ASURE</h1>
+            <h4>RETHINK INSURANCE</h4>
             <p>Loading...</p>
             <Progress percent={this.state.percent} position="normal" />
             <div

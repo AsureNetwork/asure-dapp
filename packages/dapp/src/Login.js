@@ -179,6 +179,7 @@ class Login extends Component {
               >
                 <AppLogo styleName="lg" />
                 <h1 className="title">ASURE</h1>
+                <h4>RETHINK INSURANCE</h4>
               </div>
               <form>
                 <List

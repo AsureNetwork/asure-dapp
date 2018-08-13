@@ -6,14 +6,9 @@ node_js:
 cache:
   directories:
     - node_modules
-    - packages/dapp/node_modules
-    - packages/device-wrapper/node_modules
-    - packages/gpcli/node_modules
-    - packages/smartcontracts/node_modules
+    - packages/*/node_modules
 before_install:
-  - npm install -g npm lerna
-install:
-  - lerna bootstrap
+  - npm install -g npm
 script:
   - npm run --prefix packages/smartcontracts build
   - npm run --prefix packages/dapp build

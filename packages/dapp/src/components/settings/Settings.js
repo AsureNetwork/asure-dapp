@@ -27,7 +27,10 @@ import { getCurrentEthereumNetwork, getProtocol } from '../../reducers/network';
 import { getCurrentAccount } from '../../reducers/account';
 import { Constants } from '../Constants';
 import { AppLogo } from '../Logo';
-import { showLoadingAnimation } from '../../actions/loading';
+import {
+  completeLongstandingOperation,
+  startLongstandingOperation
+} from '../../actions/loading';
 import moment from 'moment';
 
 const mapStateToProps = state => {
@@ -41,7 +44,9 @@ const mapStateToProps = state => {
 
 const mapDipatchToProps = dispatch => {
   return {
-    showLoadingAnimation: () => dispatch(showLoadingAnimation())
+    startLongstandingOperation: () => dispatch(startLongstandingOperation()),
+    completeLongstandingOperation: () =>
+      dispatch(completeLongstandingOperation())
   };
 };
 
@@ -62,7 +67,7 @@ class Settings extends React.Component {
       return;
     }
 
-    this.props.showLoadingAnimation();
+    this.props.startLongstandingOperation();
     const tx = this.contracts.Test.methods.increment().send();
 
     console.log('onSendTestTx', 'tx sent');
@@ -73,7 +78,9 @@ class Settings extends React.Component {
       error => {
         console.error('onSendTestTx', error);
       }
-    );
+    ).finally(() => {
+      this.props.completeLongstandingOperation();
+    });
   };
 
   renderTabBar = props => {

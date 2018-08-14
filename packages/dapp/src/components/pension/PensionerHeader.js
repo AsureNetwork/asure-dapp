@@ -34,12 +34,14 @@ class PensionerHeader extends Component {
 
   onPayout = async () => {
     try {
-      this.props.showLoadingAnimation();
+      this.props.startLongstandingOperation();
       await this.contracts.PensionWallet.methods
         .withdraw(this.props.account)
         .send({ from: this.props.account, gas: 3000000 });
     } catch (error) {
       console.error('onPayout', error);
+    } finally {
+      this.props.completeLongstandingOperation();
     }
   };
 

@@ -6,7 +6,10 @@ import {
 } from '../actions/pension';
 import moment from 'moment';
 import web3 from 'web3';
-import { showLoadingAnimation } from '../actions/loading';
+import {
+  completeLongstandingOperation,
+  startLongstandingOperation
+} from '../actions/loading';
 
 export function* watchLoadPension() {
   yield takeEvery(LOAD_PENSION, fetchPension);
@@ -80,7 +83,7 @@ export function* payIntoPension(action) {
         `onPay: current user (${action.ethAccount}) does not have enough funds`
       );
     } else {
-      yield put(showLoadingAnimation());
+      yield put(startLongstandingOperation());
 
       console.log(
         `onPay: appproving PensionWallet (${pensionWalletAddress}) to spend ${
@@ -135,5 +138,7 @@ export function* payIntoPension(action) {
     }
   } catch (error) {
     console.error('pay', error);
+  } finally {
+    completeLongstandingOperation();
   }
 }

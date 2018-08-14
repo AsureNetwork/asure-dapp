@@ -23,14 +23,13 @@ import { getCurrentAccount } from './reducers/account';
 import { Home } from './components/home/Home';
 import { isIntroDisabled, isIntroSkipped } from './reducers/intro';
 import { showIntro } from './actions/intro';
-import { getLoadingPercentage, isLoading } from './reducers/loading';
+import { getLoadingInfo } from './reducers/loading';
 
 const mapStateToProps = state => {
   return {
     account: getCurrentAccount(state),
     skipIntro: isIntroSkipped(state) || isIntroDisabled(state),
-    isLoading: isLoading(state),
-    loadingPercentage: getLoadingPercentage(state)
+    loadingInfo: getLoadingInfo(state)
   };
 };
 
@@ -206,9 +205,9 @@ class Main extends React.Component {
 
           <Progress
             position="normal"
-            percent={this.props.loadingPercentage}
+            percent={this.props.loadingInfo.percentage}
             style={{
-              visibility: this.props.isLoading ? 'visible' : 'hidden'
+              visibility: this.props.loadingInfo.visible ? 'visible' : 'hidden'
             }}
           />
 

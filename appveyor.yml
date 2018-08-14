@@ -10,7 +10,7 @@ platform:
 
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
-  - npm config -g set script-shell "/msys64/usr/bin/bash"
+  - npm config -g set script-shell "bash"
   - npm install -g npm
   - npm install
 

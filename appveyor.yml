@@ -10,12 +10,15 @@ platform:
 
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
+  - npm config -g set script-shell "/usr/bin/bash"
   - npm install -g npm
-  - ps: which bash
+  - npm install
 
-build_script:
+before_build:
   - node --version
   - npm --version
+
+build_script:
   - npm run build
 
 test: off

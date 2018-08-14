@@ -6,7 +6,7 @@ import { Calendar, Notes } from '../../thumbs';
 import { PensionFormula } from './PensionFormula';
 import { withRouter } from 'react-router';
 import moment from 'moment';
-import { formatEurAsWei } from '../../utils/formatEur';
+import { formatEurAsWei, formatWeiAsEur } from '../../utils/formatEur';
 
 class PensionSimulation extends React.Component {
   static contextTypes = {
@@ -44,10 +44,12 @@ class PensionSimulation extends React.Component {
       age: userAge,
       zfyears: 0,
       year: String(67),
-      salary: 2500,
-      futureSalary: 2500,
+      income: this.props.userAccount.salary,
+      futureIncome: this.props.userAccount.salary,
+      averageYearlyIncome: 30000,
       expectedPension: 1600,
       actualPensionPoints: this.props.pensionData.totalPoints,
+      maxPensionPointsPerYear: 2,
       zf: 1.0,
       raf: 1.0,
       arw: 29.0
@@ -71,6 +73,24 @@ class PensionSimulation extends React.Component {
       .then(data => {
         this.setState({ accessAgeDate: new Date(data * 1000) });
       });
+
+    this.contracts.PensionSettings.methods
+      .getAverageIncomeByYear(moment().year())
+      .call({ from: this.props.account })
+      .then((data, result) => {
+        let averageYearlyIncome = formatWeiAsEur(data);
+        this.setState({ averageYearlyIncome: averageYearlyIncome });
+        console.log('averageYearlyIncome: ' + averageYearlyIncome);
+      });
+
+    this.contracts.PensionSettings.methods
+      .getMaxPensionPointsByYear(moment().year())
+      .call({ from: this.props.account })
+      .then((data, result) => {
+        let maxPensionPointsPerYear = data / 10 ** 3;
+        this.setState({ maxPensionPointsPerYear: maxPensionPointsPerYear });
+        console.log('maxPensionPointsPerYear: ' + maxPensionPointsPerYear);
+      });
   }
 
   componentDidMount() {
@@ -80,6 +100,14 @@ class PensionSimulation extends React.Component {
   onUpdateAccessAge = opt => {
     console.log('New access age: ' + opt);
     this.setState({ accessAge: Number(opt) });
+    setTimeout(() => {
+      this.calculateInSmartContract();
+    }, 1);
+  };
+
+  onUpdateIncome = opt => {
+    console.log('New income: ' + opt);
+    this.setState({ futureIncome: opt });
     setTimeout(() => {
       this.calculateInSmartContract();
     }, 1);
@@ -105,11 +133,22 @@ class PensionSimulation extends React.Component {
     return accessYear;
   };
 
+  getYearlyPensionPoints = () => {
+    let result =
+      (this.state.futureIncome * 12) / this.state.averageYearlyIncome;
+    if (result > this.state.maxPensionPointsPerYear)
+      result = this.state.maxPensionPointsPerYear;
+    return result;
+  };
+
   calculateFuturePensionPoints = () => {
     let accessYear = this.getAccessYear();
-    let yearlyPensionPoints = 1;
+    let actualYear = moment().year();
+
+    let yearlyPensionPoints = this.getYearlyPensionPoints();
+
     let calculatedPensionPoints =
-      (accessYear - 2018) * yearlyPensionPoints +
+      (accessYear - actualYear) * yearlyPensionPoints +
       parseFloat(this.state.actualPensionPoints);
     this.setState({ futureEp: calculatedPensionPoints });
   };
@@ -124,7 +163,7 @@ class PensionSimulation extends React.Component {
     this.calculateFuturePensionPoints();
 
     const actualPensionPoints = this.props.pensionData.totalPoints;
-    const futureSalary = this.state.futureSalary;
+    const futureIncome = this.state.futureIncome;
     const zf = this.state.zf;
     const raf = this.state.raf;
 
@@ -132,7 +171,7 @@ class PensionSimulation extends React.Component {
       accessYear,
       actualYear,
       actualPensionPoints * 10 ** 3,
-      formatEurAsWei((futureSalary * 12).toString()),
+      formatEurAsWei((futureIncome * 12).toString()),
       zf * 10 ** 2,
       raf * 10 ** 2
     );
@@ -148,7 +187,7 @@ class PensionSimulation extends React.Component {
 
   openModal = () => {
     Modal.prompt(
-      'Your salary',
+      'Your monthly income',
       '',
       [
         { text: 'Cancel' },
@@ -158,21 +197,16 @@ class PensionSimulation extends React.Component {
             const amountAsNumber = parseInt(amount, 10);
 
             if (!/^\d+(\.\d{0,2})?$/.test(amount) || isNaN(amountAsNumber)) {
-              Toast.info('Invalid salary.', 1);
+              Toast.info('Invalid income.', 1);
               return Promise.reject();
             }
 
-            let result = this.setState({ futureSalary: amountAsNumber });
-
-            setTimeout(() => {
-              this.calculateInSmartContract();
-            }, 1);
-            return result;
+            return this.onUpdateIncome(amountAsNumber);
           }
         }
       ],
       'default',
-      '2500'
+      this.state.futureIncome
     );
   };
 
@@ -182,11 +216,11 @@ class PensionSimulation extends React.Component {
         <List className="my-list">
           <List.Item
             thumb={Notes}
-            extra={<span>{this.state.futureSalary.toString()} EUR</span>}
+            extra={<span>{this.state.futureIncome.toString()} EUR</span>}
             arrow="horizontal"
             onClick={this.openModal}
           >
-            Salary
+            Income
             <List.Item.Brief>
               <WhiteSpace />
             </List.Item.Brief>

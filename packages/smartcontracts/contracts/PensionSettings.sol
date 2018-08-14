@@ -26,4 +26,9 @@ contract PensionSettings {
   function getPensionPointPrecision() public pure returns (uint _precision){
     return 1000;
   }
+
+  function getMaxPensionPointsByYear(uint16 _year) public pure returns (uint _maxYearlyPensionPoints) {
+    return 2000;
+  }
+
 }

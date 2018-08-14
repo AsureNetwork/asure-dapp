@@ -59,6 +59,10 @@ contract Pension is Ownable {
 
     uint256 _yearlyPensionPoints = _yearlyIncome*(10**3) / _averageIncome; //TODO: (getPointsByYearForAmount) we have to calculate the average income for every year until retirement starts
 
+    if (_yearlyPensionPoints > 2000) {
+      _yearlyPensionPoints = 2000;
+    }
+
     uint256 _calculatedPensionPoints = ((_accessYear - _actualYear) * _yearlyPensionPoints) + _actualPensionPoints;
 
     return _calculatedPensionPoints * _accessFactor * _pensionTypeFactor * _pensionPointValue; //TODO: AccessFactor has to be calculated within smart contract (accessAge - actualAge)
@@ -68,7 +72,14 @@ contract Pension is Ownable {
     PensionSettings settings = PensionSettings(registry.getContract(PensionLib.ContractType.PensionSettings));
 
     uint256 _averageIncome = settings.getAverageIncomeByYear(_actualYear);
+    uint256 _maxPensionPoints = settings.getMaxPensionPointsByYear(_actualYear);
 
-    return  _yearlyIncome*(10**3) / _averageIncome;
+    uint256 _yearlyPensionPoints = _yearlyIncome*(10**3) / _averageIncome;
+
+    if (_yearlyPensionPoints > _maxPensionPoints) {
+      _yearlyPensionPoints = _maxPensionPoints;
+    }
+
+    return _yearlyPensionPoints;
   }
 }

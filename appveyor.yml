@@ -11,7 +11,7 @@ platform:
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - npm install -g npm
-  - call tools/init-win.cmd
+  - ps: which bash
 
 build_script:
   - node --version

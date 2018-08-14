@@ -5,19 +5,19 @@ set -e
 PROFILE=${1:-development}
 echo "Using profile \"${PROFILE}\"."
 
-#echo "Deploying pmizel@asure.io ..."
-#node src/cli.js --profile "${PROFILE}" register-user \
-#  --address 0x2215fef923727437C48F219947E6a7a5D1AB48C0 \
-#  --birth-date 1980-08-01 \
-#  --pension-date 2047-08-01 \
-#  --salary 2500
+echo "Deploying pmizel@asure.io ..."
+node src/cli.js --profile "${PROFILE}" register-user \
+  --address 0x2215fef923727437C48F219947E6a7a5D1AB48C0 \
+  --birth-date 1980-08-01 \
+  --pension-date 2047-08-01 \
+  --salary 2500
 
-#echo "Deploying fraetz@asure.io ..."
-#node src/cli.js --profile "${PROFILE}" register-user \
-#  --address 0x79461c71bfe8d7b3bf826dea15d7494a6af1be81 \
-#  --birth-date 1989-03-29 \
-#  --pension-date 2056-03-29 \
-#  --salary 2500
+echo "Deploying fraetz@asure.io ..."
+node src/cli.js --profile "${PROFILE}" register-user \
+  --address 0x79461c71bfe8d7b3bf826dea15d7494a6af1be81 \
+  --birth-date 1989-03-29 \
+  --pension-date 2056-03-29 \
+  --salary 2500
 
 echo "Deploying gschmuck@asure.io ..."
 node src/cli.js --profile "${PROFILE}" register-user \

@@ -54,7 +54,7 @@ class PensionerHeader extends Component {
         message={
           <span>
             <Button type="primary" inline size="small" onClick={this.onPayout}>
-              Payout {this.getAmountOf()} €
+              Payout {this.getAmountOf()} EUR
             </Button>
           </span>
         }

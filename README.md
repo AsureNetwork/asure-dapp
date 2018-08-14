@@ -51,7 +51,7 @@ npm install -g npm
 # file in each npm package and sets script-shell to
 # `C:\Program Files\Git\bin\bash.exe`. It also adds
 # `C:\Program Files\Git\bin` to your PATH variable.
-tools/init-win.cmd
+call tools/init-win.cmd
 
 # Install dependencies.
 npm install

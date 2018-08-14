@@ -1,7 +1,21 @@
 # Asure dApp
 
-The Asure dApp is a technical feasibility study of the german
-statutory pension system implemented on the Ethereum Blockchain.
+Asure is an open decentralized autonomous insurance platform built around
+transparency, privacy and fairness, powered by blockchain innovation that
+brings together **individuals**, **companies** and **governments** in a digital world.
+
+Please find out more about the Asure protocol and platform on our website [https://asure.io](https://asure.io) and also in our
+[Whitepaper](https://www.asure.io/asure_io_whitepaper_en.pdf).
+
+The Asure dApp will become the reference implementation for dApps
+using the Asure protocol and platform. It will feature
+
+- a technical feasibility study of the german
+  statutory pension system implemented on the Ethereum
+  blockchain and the Asure protocol / platform.
+- a complete wallet implementation.
+- an overview and management of my insurance policies.
+- an insurance store to find and buy insurance policies.
 
 ## Demo
 
@@ -13,7 +27,7 @@ Also, you can try our the dApp on IPFS at [https://ipfs.asure.io/ipns/dapp.asure
 
 [![Build Status](https://travis-ci.org/AsureFoundation/asure-dapp.svg?branch=master)](https://travis-ci.org/AsureFoundation/asure-dapp)
 
-This implementation is still very much a work in progress. It can be used for testing,
+**This implementation is still very much a work in progress.** It can be used for testing,
 but it should not be used for real funds. We do our best to identify and fix problems,
 and implement missing features.
 

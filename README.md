@@ -26,6 +26,7 @@ Also, you can try our the dApp on IPFS at [https://ipfs.asure.io/ipns/dapp.asure
 ## Project Status
 
 [![Build Status](https://travis-ci.org/AsureFoundation/asure-dapp.svg?branch=master)](https://travis-ci.org/AsureFoundation/asure-dapp)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/AsureFoundation/asure-dapp/branch/master?svg=true)](https://ci.appveyor.com/project/Mischi/asure-dapp)
 
 **This implementation is still very much a work in progress.** It can be used for testing,
 but it should not be used for real funds. We do our best to identify and fix problems,

@@ -78,7 +78,6 @@ class Loading extends Component {
             <AppLogo styleName="lg" />
             <h1 className="title">ASURE</h1>
             <h4>RETHINK INSURANCE</h4>
-            <p>Loading...</p>
             <Progress percent={this.state.percent} position="normal" />
             <div
               style={{ position: 'fixed', bottom: '0', left: '0', right: '0' }}

@@ -32,8 +32,8 @@ npm install -g npm
 # `script-shell` and point it to the Git Bash shell.
 # This config option can be set globally or per npm
 # package by using an .npmrc file.
-# We prepared a little script that creates a .npmrc
-# in each npm package and sets script-shell to
+# We prepared a little script that creates an .npmrc
+# file in each npm package and sets script-shell to
 # `C:\Program Files\Git\bin\bash.exe`. It also adds
 # `C:\Program Files\Git\bin` to your PATH variable.
 tools/init-win.cmd

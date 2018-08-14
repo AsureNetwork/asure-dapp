@@ -13,9 +13,9 @@ install:
   - npm install -g npm
   - call tools/init-win.cmd
 
-build: off
-
-test_script:
+build_script:
   - node --version
   - npm --version
   - npm run build
+
+test: off

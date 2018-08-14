@@ -14,7 +14,10 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router';
 import { createForm } from 'rc-form';
 import { Sticky, StickyContainer } from 'react-sticky';
-import { showLoadingAnimation } from '../../actions/loading';
+import {
+  completeLongstandingOperation,
+  startLongstandingOperation
+} from '../../actions/loading';
 
 class Faucet extends React.Component {
   static contextTypes = {
@@ -41,7 +44,7 @@ class Faucet extends React.Component {
       return;
     }
     this.showToast();
-    this.props.showLoadingAnimation();
+    this.props.startLongstandingOperation();
     const tx = this.context.drizzle.contracts.PensionEuroToken.methods
       .mint(this.props.accounts[0], (val * 10 ** 18).toString(16))
       .send({ from: this.props.accounts[0] });
@@ -57,7 +60,9 @@ class Faucet extends React.Component {
       error => {
         console.error('sendTx', error);
       }
-    );
+    ).finally(() => {
+      this.props.completeLongstandingOperation();
+    });
   };
 
   componentWillUnmount() {
@@ -210,7 +215,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    showLoadingAnimation: () => dispatch(showLoadingAnimation())
+    startLongstandingOperation: () => dispatch(startLongstandingOperation()),
+    completeLongstandingOperation: () =>
+      dispatch(completeLongstandingOperation())
   };
 };
 

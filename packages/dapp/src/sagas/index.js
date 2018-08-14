@@ -2,7 +2,7 @@ import { all } from 'redux-saga/effects';
 import { authFlowSaga } from './auth';
 import { watchLoadPension, watchPayIntoPension } from './pension';
 import { watchDrizzleInitialized } from './wallet';
-import { watchShowLoadingAnimation } from './loading';
+import { loadingSaga } from './loading';
 
 export function* pensionSagas() {
   yield all([
@@ -10,6 +10,6 @@ export function* pensionSagas() {
     watchLoadPension(),
     watchPayIntoPension(),
     watchDrizzleInitialized(),
-    watchShowLoadingAnimation()
+    loadingSaga()
   ]);
 }

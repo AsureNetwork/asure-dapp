@@ -14,7 +14,10 @@ import { getCurrentAccount } from '../../reducers/account';
 import { getPensionData } from '../../reducers/pension';
 import { loadPension, payIntoPension } from '../../actions/pension';
 import { getWalletData } from '../../reducers/wallet';
-import { showLoadingAnimation } from '../../actions/loading';
+import {
+  completeLongstandingOperation,
+  startLongstandingOperation
+} from '../../actions/loading';
 
 const mapStateToProps = state => {
   return {
@@ -30,7 +33,9 @@ const mapDispatchToProps = dispatch => {
     loadPension: ethAccount => dispatch(loadPension(ethAccount)),
     payIntoPension: (ethAccount, year, month, amount) =>
       dispatch(payIntoPension(ethAccount, year, month, amount)),
-    showLoadingAnimation: () => dispatch(showLoadingAnimation())
+    startLongstandingOperation: () => dispatch(startLongstandingOperation()),
+    completeLongstandingOperation: () =>
+      dispatch(completeLongstandingOperation())
   };
 };
 
@@ -83,7 +88,10 @@ class Pension extends Component {
       <Fragment>
         {this.props.pensionData.isPensioner ? (
           <PensionerHeader
-            showLoadingAnimation={this.props.showLoadingAnimation}
+            startLongstandingOperation={this.props.startLongstandingOperation}
+            completeLongstandingOperation={
+              this.props.completeLongstandingOperation
+            }
           />
         ) : (
           <InsuredHeader

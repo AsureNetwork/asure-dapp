@@ -1,32 +1,50 @@
 import {
-  HIDE_LOADING_ANIMATION,
-  SHOW_LOADING_ANIMATION,
-  UPDATE_LOADING_ANIMATION
+  COMPLETE_LONGSTANDING_OPERATION,
+  RESET_LONGSTANDING_OPERATIONS,
+  SET_PROGRESS_VISIBILITY,
+  START_LONGSTANDING_OPERATION,
+  UPDATE_PROGRESS
 } from '../actions/loading';
 
 export const initialState = {
+  operationsTotal: 0,
+  operationsCompleted: 0,
   visible: false,
+  status: 0,
   percentage: 0
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SHOW_LOADING_ANIMATION:
+    case START_LONGSTANDING_OPERATION:
       return Object.assign({}, state, {
-        visible: true
+        operationsTotal: state.operationsTotal + 1
       });
-    case UPDATE_LOADING_ANIMATION:
+    case COMPLETE_LONGSTANDING_OPERATION:
       return Object.assign({}, state, {
-        percentage: action.percentage
+        operationsCompleted: state.operationsCompleted + 1
       });
-    case HIDE_LOADING_ANIMATION:
+    case RESET_LONGSTANDING_OPERATIONS:
       return Object.assign({}, state, {
-        visible: false
+        operationsTotal: 0,
+        operationsCompleted: 0
+      });
+    case SET_PROGRESS_VISIBILITY:
+      return Object.assign({}, state, {
+        visible: action.isVisible
+      });
+    case UPDATE_PROGRESS:
+      return Object.assign({}, state, {
+        status: action.status,
+        percentage: action.status * 100
       });
     default:
       return state;
   }
 };
 
-export const getLoadingPercentage = state => state.app.loading.percentage;
-export const isLoading = state => state.app.loading.visible;
+export const getLoading = state => state.app.loading;
+export const getLoadingInfo = state => ({
+  visible: state.app.loading.visible,
+  percentage: state.app.loading.percentage
+});

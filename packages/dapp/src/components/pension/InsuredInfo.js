@@ -7,7 +7,10 @@ import { Constants } from '../Constants';
 import { withRouter } from 'react-router';
 import { getPension } from '../../reducers/pension';
 import { getCurrentAccount } from '../../reducers/account';
-import { showLoadingAnimation } from '../../actions/loading';
+import {
+  startLongstandingOperation,
+  completeLongstandingOperation
+} from '../../actions/loading';
 
 class InsuredInfo extends Component {
   static contextTypes = {
@@ -80,12 +83,13 @@ class InsuredInfo extends Component {
     const pensionDate = new Date(birthDate.getTime());
     pensionDate.setFullYear(birthDate.getFullYear() + Number(opt));
 
-    this.props.showLoadingAnimation();
+    this.props.startLongstandingOperation();
     this.setState({ isPensionDateUpdating: true });
     await this.contracts.PensionUsers.methods
       .setUserPensionDate(this.props.account, pensionDate.valueOf() / 1000)
       .send()
       .finally(() => {
+        this.props.completeLongstandingOperation();
         this.setState({ isPensionDateUpdating: false });
       });
   };
@@ -172,7 +176,9 @@ const mapStateToProps = state => {
 
 const mapStateToDispatch = dispatch => {
   return {
-    showLoadingAnimation: () => dispatch(showLoadingAnimation())
+    startLongstandingOperation: () => dispatch(startLongstandingOperation()),
+    completeLongstandingOperation: () =>
+      dispatch(completeLongstandingOperation())
   };
 };
 

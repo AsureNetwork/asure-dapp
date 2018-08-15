@@ -1,4 +1,12 @@
-import { put, select, takeEvery, takeLatest } from 'redux-saga/effects';
+import {
+  cancel,
+  fork,
+  put,
+  select,
+  take,
+  takeEvery,
+  takeLatest
+} from 'redux-saga/effects';
 import { delay } from 'redux-saga';
 import {
   COMPLETE_LONGSTANDING_OPERATION,
@@ -52,11 +60,11 @@ function* startProgress() {
 
 function* completeProgress() {
   yield doUpdateProgress(1);
-  yield put(setProgressVisibility(false));
-  yield put(resetLongstandingOperations());
 
-  yield delay(500);
-  yield put(updateProgress(0));
+  const bgTask = yield fork(doResetLongstandingOperation);
+
+  yield take(START_LONGSTANDING_OPERATION);
+  yield cancel(bgTask);
 }
 
 function* doUpdateProgress(status) {
@@ -93,4 +101,12 @@ function* doIncrementProgress() {
   }
 
   yield doUpdateProgress(status + rnd);
+}
+
+function* doResetLongstandingOperation() {
+  yield delay(300);
+  yield put(setProgressVisibility(false));
+  yield put(resetLongstandingOperations());
+  yield delay(300);
+  yield put(updateProgress(0));
 }

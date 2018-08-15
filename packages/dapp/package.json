@@ -50,6 +50,5 @@
     "less-loader": "^4.1.0",
     "react-app-rewired": "^1.5.2",
     "webpack-pwa-manifest": "^3.6.3"
-  },
-  "homepage": "./"
+  }
 }

@@ -1,9 +1,10 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const { injectBabelPlugin, getLoader } = require('react-app-rewired');
 
 const fileLoaderMatcher = function(rule) {
-  return rule.loader && rule.loader.indexOf(`file-loader`) != -1;
+  return rule.loader && rule.loader.indexOf(`file-loader`) !== -1;
 };
 
 /*
@@ -39,6 +40,32 @@ module.exports = function override(config, env) {
       display: 'standalone',
       theme_color: '#eeeeee',
       background_color: '#eeeeee'
+    })
+  );
+
+  // Add second entry point for desktop iphone mockup
+  // See https://github.com/facebook/create-react-app/issues/1084
+  config.entry = {
+    index: config.entry,
+    desktop: './src/desktop/desktop.js'
+  };
+  config.output.filename = 'static/js/[name].bundle.js';
+  config.plugins = config.plugins.filter(
+    plugin => !(plugin instanceof HtmlWebpackPlugin)
+  );
+  config.plugins.unshift(
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: 'public/index.html',
+      chunks: ['index']
+    })
+  );
+  config.plugins.unshift(
+    new HtmlWebpackPlugin({
+      inject: true,
+      filename: 'desktop.html',
+      template: 'public/desktop.html',
+      chunks: ['desktop']
     })
   );
 

@@ -68,11 +68,11 @@ contract Pension is Ownable {
     return _calculatedPensionPoints * _accessFactor * _pensionTypeFactor * _pensionPointValue; //TODO: AccessFactor has to be calculated within smart contract (accessAge - actualAge)
   }
 
-  function calculatePensionPoints(uint16 _actualYear, uint256 _yearlyIncome) public view returns (uint256 amount) {
+  function calculatePensionPoints(uint16 _year, uint256 _yearlyIncome) public view returns (uint256 amount) {
     PensionSettings settings = PensionSettings(registry.getContract(PensionLib.ContractType.PensionSettings));
 
-    uint256 _averageIncome = settings.getAverageIncomeByYear(_actualYear);
-    uint256 _maxPensionPoints = settings.getMaxPensionPointsByYear(_actualYear);
+    uint256 _averageIncome = settings.getAverageIncomeByYear(_year);
+    uint256 _maxPensionPoints = settings.getMaxPensionPointsByYear(_year);
 
     uint256 _yearlyPensionPoints = _yearlyIncome*(10**3) / _averageIncome;
 

@@ -7,7 +7,6 @@ import {
   Send,
   tokenBnb,
   tokenDai,
-  tokenDollar,
   tokenEthereum,
   tokenEuro
 } from '../../thumbs';
@@ -142,15 +141,6 @@ class Wallet extends React.Component {
             }}
           >
             Euro <Badge dot style={{ top: '-10px' }} />
-          </List.Item>
-          <List.Item
-            thumb={tokenDollar}
-            extra={'$ 2.998.00'}
-            onClick={() => {
-              this.infoDemo();
-            }}
-          >
-            Dollar
           </List.Item>
           <List.Item
             thumb={tokenBnb}

@@ -29,7 +29,8 @@ class Faucet extends React.Component {
 
     this.state = {
       animating: false,
-      address: this.props.accounts[0]
+      address: this.props.accounts[0],
+      url:""
     };
   }
 
@@ -147,13 +148,7 @@ class Faucet extends React.Component {
                   bots.
                 </p>
                 <div className="center">
-                  <InputItem
-                    {...getFieldProps('control')}
-                    labelNumber={2}
-                    placeholder="Tweet link"
-                  >
-                    Url
-                  </InputItem>
+
 
                   <Button
                     type="primary"
@@ -164,11 +159,22 @@ class Faucet extends React.Component {
                     1.000 EUR
                   </Button>
                   <WhiteSpace />
+                  <InputItem
+                    {...getFieldProps('control')}
+                    labelNumber={2}
+                    placeholder="Tweet link"
+                    onChange ={(v)=>this.setState({url:v})}
+                    value={this.state.url}
+                  >
+                    Url
+                  </InputItem>
+                  <WhiteSpace />
                   <Button
                     type="primary"
                     size="small"
                     style={{ width: '100%' }}
                     onClick={() => this.sendTx(100000)}
+                    disabled={this.state.url==="" || !this.state.url.startsWith("http")}
                   >
                     100.000 EUR
                   </Button>
@@ -178,6 +184,7 @@ class Faucet extends React.Component {
                     size="small"
                     style={{ width: '100%' }}
                     onClick={() => this.sendTx(1000000)}
+                    disabled={this.state.url==="" || !this.state.url.startsWith("http")}
                   >
                     1.000.000 EUR
                   </Button>

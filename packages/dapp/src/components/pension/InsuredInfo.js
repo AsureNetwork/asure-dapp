@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { List, Picker, Toast, WhiteSpace } from 'antd-mobile';
 import { drizzleConnect } from 'drizzle-react';
 import PropTypes from 'prop-types';
-import { Calendar, CompassIco, Notes } from '../../thumbs';
+import {Calendar, CompassIco, DifferenceIco, Notes, ResultIco, ValueIco} from '../../thumbs';
 import { Constants } from '../Constants';
 import { withRouter } from 'react-router';
 import { getPension } from '../../reducers/pension';
@@ -102,6 +102,10 @@ class InsuredInfo extends Component {
     return (
       <div>
         <List>
+          <List.Item thumb={DifferenceIco} extra={'600 EUR'}>
+            Pension gap
+            <List.Item.Brief>monthly</List.Item.Brief>
+          </List.Item>
           <List.Item arrow="horizontal" thumb={CompassIco} extra={'Active'}>
             Status
           </List.Item>
@@ -132,7 +136,7 @@ class InsuredInfo extends Component {
             <List.Item.Brief>monthly</List.Item.Brief>
           </List.Item>
           <List.Item
-            thumb={Notes}
+            thumb={ValueIco}
             extra={
               (this.props.userAccount.salary *
                 this.props.product.pensionAmountByPercent) /
@@ -145,14 +149,11 @@ class InsuredInfo extends Component {
               monthly / {this.props.product.pensionAmountByPercent}%
             </List.Item.Brief>
           </List.Item>
-          <List.Item thumb={Notes} extra={'1200 EUR'}>
+          <List.Item thumb={ResultIco} extra={'1200 EUR'}>
             Pension (inflation adjusted)
             <List.Item.Brief>monthly</List.Item.Brief>
           </List.Item>
-          <List.Item thumb={Notes} extra={'600 EUR'}>
-            Pension gap
-            <List.Item.Brief>monthly</List.Item.Brief>
-          </List.Item>
+
           <List.Item className="justify" multipleLine wrap>
             <strong>Description</strong>
             <WhiteSpace />

@@ -1,10 +1,8 @@
 import { call, select, take } from 'redux-saga/effects';
 import { LOGIN, LOGOUT } from '../actions/actions';
-import { saveState } from '../utils/state';
 import { getCurrentAccount } from '../reducers/account';
 import { AsureWsWalletProvider } from '../utils/asure-ws-wallet-provider';
 import { getCurrentEthereumNetwork, getProtocol } from '../reducers/network';
-import { initialState } from '../reducers';
 import { AsureHttpWalletProvider } from '../utils/asure-http-wallet-provider';
 
 // Override currentProvider from Mist/Metamask with our asure wallet for now
@@ -29,6 +27,8 @@ function setWeb3Provider(mnemonic, protocol, currentEthereumNetwork) {
 }
 
 export function* authFlowSaga() {
+  yield take('persist/REHYDRATE');
+
   let account = yield select(getCurrentAccount);
   let currentEthereumNetwork = yield select(getCurrentEthereumNetwork);
   let protocol = yield call(getProtocol);
@@ -64,8 +64,6 @@ export function* authFlowSaga() {
 
     yield take(LOGOUT);
     isAuthenticated = false;
-    console.log('User logged out. Reloading page ...');
-    saveState(initialState);
-    window.location.reload();
+    window.location.hash = '/';
   }
 }

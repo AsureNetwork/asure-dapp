@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { PersistGate } from 'redux-persist/integration/react';
 import './index.css';
 import { App } from './App';
 import registerServiceWorker from './registerServiceWorker';
-import store from './store';
+import store, { persistor } from './store';
 import { Provider } from 'react-redux';
 import { LocaleProvider } from 'antd-mobile';
 import MobileDetect from 'mobile-detect';
@@ -39,7 +40,9 @@ if (!isDesktopRedirectDisabled && isProduction && isDesktop && !isInIFrame) {
   ReactDOM.render(
     <LocaleProvider locale={enUS}>
       <Provider store={store}>
-        <App />
+        <PersistGate loading={null} persistor={persistor}>
+          <App />
+        </PersistGate>
       </Provider>
     </LocaleProvider>,
     document.getElementById('root')

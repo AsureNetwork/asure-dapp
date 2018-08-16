@@ -1,6 +1,6 @@
 export const LOGIN = '@@app/LOGIN';
 export const LOGOUT = '@@app/LOGOUT';
-export const SWITCH_ETHEREUM_NETWORK = '@@app/LOGOUT';
+export const SWITCH_ETHEREUM_NETWORK = '@@app/SWITCH_ETHEREUM_NETWORK';
 
 export function login(username, password) {
   return { type: LOGIN, username: username, password: password };

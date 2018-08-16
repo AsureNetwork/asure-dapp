@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { List, Picker, WhiteSpace } from 'antd-mobile';
+import { List, Picker, Toast, WhiteSpace } from 'antd-mobile';
 import { drizzleConnect } from 'drizzle-react';
 import PropTypes from 'prop-types';
 import { Calendar, CompassIco, Notes } from '../../thumbs';
@@ -83,6 +83,10 @@ class InsuredInfo extends Component {
     const pensionDate = new Date(birthDate.getTime());
     pensionDate.setFullYear(birthDate.getFullYear() + Number(opt));
 
+    Toast.info(
+      'Your changes will be persisted to the blockchain now. This can take a several seconds ...',
+      3
+    );
     this.props.startLongstandingOperation();
     this.setState({ isPensionDateUpdating: true });
     await this.contracts.PensionUsers.methods

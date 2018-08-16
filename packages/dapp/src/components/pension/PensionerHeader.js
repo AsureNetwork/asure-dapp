@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Pensioner } from '../../thumbs';
-import { Button, Result } from 'antd-mobile';
+import { Button, Result, Toast } from 'antd-mobile';
 import PropTypes from 'prop-types';
 import { drizzleConnect } from 'drizzle-react';
 import web3 from 'web3';
@@ -34,6 +34,10 @@ class PensionerHeader extends Component {
 
   onPayout = async () => {
     try {
+      Toast.info(
+        'Your changes will be persisted to the blockchain now. This can take a several seconds ...',
+        3
+      );
       this.props.startLongstandingOperation();
       await this.contracts.PensionWallet.methods
         .withdraw(this.props.account)

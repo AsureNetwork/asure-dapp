@@ -10,6 +10,7 @@ import {
   completeLongstandingOperation,
   startLongstandingOperation
 } from '../actions/loading';
+import { Toast } from 'antd-mobile';
 
 export function* watchLoadPension() {
   yield takeEvery(LOAD_PENSION, fetchPension);
@@ -66,10 +67,14 @@ export function* payIntoPension(action) {
 
   const pensionWalletAddress = PensionWallet.address;
 
+  let balanceResult;
   try {
-    const balanceResult = yield call(
+    yield put(startLongstandingOperation());
+
+    balanceResult = yield call(
       PensionEuroToken.methods.balanceOf(action.ethAccount).call
     );
+
     console.log(
       `onPay: current user (${
         action.ethAccount
@@ -77,13 +82,21 @@ export function* payIntoPension(action) {
         balanceResult
       )})`
     );
+  } catch (error) {
+    console.error('pay', error);
+  }
 
-    if (web3.utils.toBN(balanceResult).lt(web3.utils.toBN(action.amount))) {
-      console.error(
-        `onPay: current user (${action.ethAccount}) does not have enough funds`
+  if (web3.utils.toBN(balanceResult).lt(web3.utils.toBN(action.amount))) {
+    console.error(
+      `onPay: current user (${action.ethAccount}) does not have enough funds`
+    );
+  } else {
+    try {
+      yield call(
+        Toast.info,
+        'Your changes will be persisted to the blockchain now. This can take a several seconds ...',
+        3
       );
-    } else {
-      yield put(startLongstandingOperation());
 
       console.log(
         `onPay: appproving PensionWallet (${pensionWalletAddress}) to spend ${
@@ -135,10 +148,10 @@ export function* payIntoPension(action) {
           allowanceResult2
         )})`
       );
+    } catch (error) {
+      console.error('pay', error);
+    } finally {
+      yield put(completeLongstandingOperation());
     }
-  } catch (error) {
-    console.error('pay', error);
-  } finally {
-    completeLongstandingOperation();
   }
 }

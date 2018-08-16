@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Result, Tabs } from 'antd-mobile';
+import { List, Result, Tabs, Toast } from 'antd-mobile';
 import {
   Asure,
   Calendar,
@@ -67,6 +67,10 @@ class Settings extends React.Component {
       return;
     }
 
+    Toast.info(
+      'Your changes will be persisted to the blockchain now. This can take a several seconds ...',
+      3
+    );
     this.props.startLongstandingOperation();
     const tx = this.contracts.Test.methods.increment().send();
 

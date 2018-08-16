@@ -28,9 +28,6 @@ export function AsureHttpWalletProvider(
 
   for (let i = address_index; i < address_index + num_addresses; i++) {
     var wallet = this.hdwallet.derivePath(this.wallet_hdpath + i).getWallet();
-    console.log(
-      i + ': ' + this.mnemonic + ' : ' + wallet.getPrivateKey().toString('hex')
-    );
     var addr = '0x' + wallet.getAddress().toString('hex');
     this.addresses.push(addr);
     this.wallets[addr] = wallet;

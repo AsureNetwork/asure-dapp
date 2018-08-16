@@ -1,8 +1,10 @@
 import { LOGIN, LOGOUT } from '../actions/actions';
 import moment from 'moment';
 import { TeamFraetz, TeamGschmuck, TeamMlurz, TeamPmizel } from '../thumbs';
+import { RESET_ACCOUNT_ERROR_MESSAGE } from '../actions/account';
 
 export const initialState = {
+  errorMessage: null,
   account: null,
   testAccounts: [
     {
@@ -59,19 +61,27 @@ export default (state = initialState, action) => {
       const account = state.testAccounts.find(
         a => a.username === action.username
       );
-      if (!account) {
-        console.error(
-          'test account not found. logging in with real accounts is not supported yet'
-        );
-        return state;
+      if (account) {
+        return Object.assign({}, state, {
+          errorMessage: null,
+          account: account
+        });
       }
 
+      console.warn(
+        'test account not found. logging in with real accounts is not supported yet'
+      );
       return Object.assign({}, state, {
-        account: account
+        errorMessage: 'Username not found. Please choose a persona to login.',
+        account: null
       });
     case LOGOUT:
       return Object.assign({}, state, {
         account: null
+      });
+    case RESET_ACCOUNT_ERROR_MESSAGE:
+      return Object.assign({}, state, {
+        errorMessage: null
       });
     default:
       return state;
@@ -79,4 +89,5 @@ export default (state = initialState, action) => {
 };
 
 export const getCurrentAccount = state => state.app.account.account;
+export const getAccountErrorMessage = state => state.app.account.errorMessage;
 export const getTestAccounts = state => state.app.account.testAccounts;

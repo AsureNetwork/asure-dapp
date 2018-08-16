@@ -20,8 +20,9 @@ import {
   getCurrentEthereumNetwork,
   getEthereumNetworks
 } from './reducers/network';
-import { getTestAccounts } from './reducers/account';
+import { getAccountErrorMessage, getTestAccounts } from './reducers/account';
 import EthIcon from './components/extensions/EthIcon';
+import { resetAccountErrorMessage } from './actions/account';
 
 const mapStateToProps = state => {
   return {
@@ -29,6 +30,7 @@ const mapStateToProps = state => {
     ethereumNetworks: getEthereumNetworks(state),
     currentEthereumNetwork: getCurrentEthereumNetwork(state),
     testAccounts: getTestAccounts(state),
+    accountErrorMessage: getAccountErrorMessage(state),
     pickerTestAccounts: [
       getTestAccounts(state).map(acc => ({
         label: (
@@ -66,6 +68,9 @@ const mapDispatchToProps = dispatch => {
   return {
     login: (username, password) => {
       dispatch(login(username, password));
+    },
+    resetAccountErrorMessage: () => {
+      dispatch(resetAccountErrorMessage());
     },
     switchEthereumNetwork: ethereumNetwork => {
       dispatch(switchEthereumNetwork(ethereumNetwork));
@@ -109,6 +114,10 @@ class Login extends Component {
   onReset = () => {
     this.props.form.resetFields();
   };
+
+  componentDidMount() {
+    this.props.resetAccountErrorMessage();
+  }
 
   render() {
     const { getFieldProps, getFieldError } = this.props.form;
@@ -183,10 +192,13 @@ class Login extends Component {
               </div>
               <form>
                 <List
-                  renderFooter={() =>
-                    getFieldError('username') &&
-                    getFieldError('username').join(',')
-                  }
+                  renderFooter={() => (
+                    <p>
+                      {this.props.accountErrorMessage}
+                      {getFieldError('username') &&
+                        getFieldError('username').join(',')}
+                    </p>
+                  )}
                 >
                   <Picker
                     data={this.props.pickerTestAccounts}
@@ -224,26 +236,6 @@ class Login extends Component {
                   >
                     Password
                   </InputItem>
-                  {/*
-                <InputItem
-                  {...getFieldProps('username')}
-                  clear
-                  placeholder="Username"
-                  ref={el => (this.autoFocusInst = el)}
-                >
-                  Username
-                </InputItem>
-
-                <InputItem
-                  {...getFieldProps('password')}
-                  type="password"
-                  clear
-                  placeholder="******"
-                  ref={el => (this.inputRef = el)}
-                >
-                  Password
-                </InputItem>
-                */}
                   <List.Item>
                     <Button onClick={this.onLogin} size="small" type="primary">
                       Login

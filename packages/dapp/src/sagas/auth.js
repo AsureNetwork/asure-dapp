@@ -1,6 +1,6 @@
 import { call, select, take } from 'redux-saga/effects';
 import { LOGIN, LOGOUT } from '../actions/actions';
-import { getCurrentAccount } from '../reducers/account';
+import { getAccountErrorMessage, getCurrentAccount } from '../reducers/account';
 import { AsureWsWalletProvider } from '../utils/asure-ws-wallet-provider';
 import { getCurrentEthereumNetwork, getProtocol } from '../reducers/network';
 import { AsureHttpWalletProvider } from '../utils/asure-http-wallet-provider';
@@ -48,9 +48,13 @@ export function* authFlowSaga() {
   while (true) {
     if (!isAuthenticated) {
       yield take(LOGIN);
-      isAuthenticated = true;
-      console.log('User logged in.');
+      isAuthenticated = !(yield select(getAccountErrorMessage));
+      if (!isAuthenticated) {
+        console.log('User login failed.');
+        continue;
+      }
 
+      console.log('User logged in.');
       account = yield select(getCurrentAccount);
       currentEthereumNetwork = yield select(getCurrentEthereumNetwork);
       protocol = yield call(getProtocol);

@@ -2,7 +2,14 @@ import React, { Component } from 'react';
 import { List, Picker, Toast, WhiteSpace } from 'antd-mobile';
 import { drizzleConnect } from 'drizzle-react';
 import PropTypes from 'prop-types';
-import {Calendar, CompassIco, DifferenceIco, Notes, ResultIco, ValueIco} from '../../thumbs';
+import {
+  Calendar,
+  CompassIco,
+  DifferenceIco,
+  Notes,
+  ResultIco,
+  ValueIco
+} from '../../thumbs';
 import { Constants } from '../Constants';
 import { withRouter } from 'react-router';
 import { getPension } from '../../reducers/pension';
@@ -83,7 +90,7 @@ class InsuredInfo extends Component {
     const pensionDate = new Date(birthDate.getTime());
     pensionDate.setFullYear(birthDate.getFullYear() + Number(opt));
 
-    Toast.info(
+    Toast.success(
       'Your changes will be persisted to the blockchain now. This can take a several seconds ...',
       3
     );

@@ -34,7 +34,7 @@ class PensionerHeader extends Component {
 
   onPayout = async () => {
     try {
-      Toast.info(
+      Toast.success(
         'Your changes will be persisted to the blockchain now. This can take a several seconds ...',
         3
       );

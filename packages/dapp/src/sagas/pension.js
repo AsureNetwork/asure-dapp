@@ -93,7 +93,7 @@ export function* payIntoPension(action) {
   } else {
     try {
       yield call(
-        Toast.info,
+        Toast.success,
         'Your changes will be persisted to the blockchain now. This can take a several seconds ...',
         3
       );

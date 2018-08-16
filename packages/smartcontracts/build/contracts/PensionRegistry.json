@@ -143,14 +143,14 @@
     "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionRegistry.sol",
     "exportedSymbols": {
       "PensionRegistry": [
-        1531
+        1511
       ]
     },
-    "id": 1532,
+    "id": 1512,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1434,
+        "id": 1414,
         "literals": [
           "solidity",
           "^",
@@ -163,10 +163,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 1435,
+        "id": 1415,
         "nodeType": "ImportDirective",
-        "scope": 1532,
-        "sourceUnit": 2608,
+        "scope": 1512,
+        "sourceUnit": 2588,
         "src": "28:63:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -174,10 +174,10 @@
       {
         "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionLib.sol",
         "file": "./PensionLib.sol",
-        "id": 1436,
+        "id": 1416,
         "nodeType": "ImportDirective",
-        "scope": 1532,
-        "sourceUnit": 1110,
+        "scope": 1512,
+        "sourceUnit": 1090,
         "src": "93:26:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -188,41 +188,41 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1437,
+              "id": 1417,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2607,
+              "referencedDeclaration": 2587,
               "src": "151:7:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$2607",
+                "typeIdentifier": "t_contract$_Ownable_$2587",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 1438,
+            "id": 1418,
             "nodeType": "InheritanceSpecifier",
             "src": "151:7:4"
           }
         ],
         "contractDependencies": [
-          2607
+          2587
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1531,
+        "id": 1511,
         "linearizedBaseContracts": [
-          1531,
-          2607
+          1511,
+          2587
         ],
         "name": "PensionRegistry",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 1440,
+            "id": 1420,
             "name": "pensionPoints",
             "nodeType": "VariableDeclaration",
-            "scope": 1531,
+            "scope": 1511,
             "src": "164:21:4",
             "stateVariable": true,
             "storageLocation": "default",
@@ -231,7 +231,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 1439,
+              "id": 1419,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "164:7:4",
@@ -245,10 +245,10 @@
           },
           {
             "constant": false,
-            "id": 1444,
+            "id": 1424,
             "name": "contracts",
             "nodeType": "VariableDeclaration",
-            "scope": 1531,
+            "scope": 1511,
             "src": "190:34:4",
             "stateVariable": true,
             "storageLocation": "default",
@@ -257,9 +257,9 @@
               "typeString": "mapping(uint256 => address)"
             },
             "typeName": {
-              "id": 1443,
+              "id": 1423,
               "keyType": {
-                "id": 1441,
+                "id": 1421,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
                 "src": "198:4:4",
@@ -275,7 +275,7 @@
                 "typeString": "mapping(uint256 => address)"
               },
               "valueType": {
-                "id": 1442,
+                "id": 1422,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "206:7:4",
@@ -290,7 +290,7 @@
           },
           {
             "body": {
-              "id": 1457,
+              "id": 1437,
               "nodeType": "Block",
               "src": "323:46:4",
               "statements": [
@@ -299,31 +299,31 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 1451,
+                      "id": 1431,
                       "name": "contracts",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1444,
+                      "referencedDeclaration": 1424,
                       "src": "337:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                         "typeString": "mapping(uint256 => address)"
                       }
                     },
-                    "id": 1455,
+                    "id": 1435,
                     "indexExpression": {
                       "argumentTypes": null,
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 1453,
+                          "id": 1433,
                           "name": "_contract",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1446,
+                          "referencedDeclaration": 1426,
                           "src": "352:9:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_ContractType_$1095",
+                            "typeIdentifier": "t_enum$_ContractType_$1075",
                             "typeString": "enum PensionLib.ContractType"
                           }
                         }
@@ -331,11 +331,11 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_enum$_ContractType_$1095",
+                            "typeIdentifier": "t_enum$_ContractType_$1075",
                             "typeString": "enum PensionLib.ContractType"
                           }
                         ],
-                        "id": 1452,
+                        "id": 1432,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -348,7 +348,7 @@
                         },
                         "typeName": "uint"
                       },
-                      "id": 1454,
+                      "id": 1434,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -373,15 +373,15 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 1450,
-                  "id": 1456,
+                  "functionReturnParameters": 1430,
+                  "id": 1436,
                   "nodeType": "Return",
                   "src": "330:33:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 1458,
+            "id": 1438,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -389,31 +389,31 @@
             "name": "getContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1447,
+              "id": 1427,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1446,
+                  "id": 1426,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1458,
+                  "scope": 1438,
                   "src": "252:33:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_ContractType_$1095",
+                    "typeIdentifier": "t_enum$_ContractType_$1075",
                     "typeString": "enum PensionLib.ContractType"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 1445,
+                    "id": 1425,
                     "name": "PensionLib.ContractType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1095,
+                    "referencedDeclaration": 1075,
                     "src": "252:23:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_ContractType_$1095",
+                      "typeIdentifier": "t_enum$_ContractType_$1075",
                       "typeString": "enum PensionLib.ContractType"
                     }
                   },
@@ -425,15 +425,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1450,
+              "id": 1430,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1449,
+                  "id": 1429,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1458,
+                  "scope": 1438,
                   "src": "308:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -442,7 +442,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1448,
+                    "id": 1428,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "308:7:4",
@@ -457,7 +457,7 @@
               ],
               "src": "307:15:4"
             },
-            "scope": 1531,
+            "scope": 1511,
             "src": "231:138:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -465,14 +465,14 @@
           },
           {
             "body": {
-              "id": 1479,
+              "id": 1459,
               "nodeType": "Block",
               "src": "487:65:4",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1475,
+                    "id": 1455,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -481,31 +481,31 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 1469,
+                        "id": 1449,
                         "name": "contracts",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1444,
+                        "referencedDeclaration": 1424,
                         "src": "494:9:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                           "typeString": "mapping(uint256 => address)"
                         }
                       },
-                      "id": 1473,
+                      "id": 1453,
                       "indexExpression": {
                         "argumentTypes": null,
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 1471,
+                            "id": 1451,
                             "name": "_contract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1460,
+                            "referencedDeclaration": 1440,
                             "src": "509:9:4",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_ContractType_$1095",
+                              "typeIdentifier": "t_enum$_ContractType_$1075",
                               "typeString": "enum PensionLib.ContractType"
                             }
                           }
@@ -513,11 +513,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_enum$_ContractType_$1095",
+                              "typeIdentifier": "t_enum$_ContractType_$1075",
                               "typeString": "enum PensionLib.ContractType"
                             }
                           ],
-                          "id": 1470,
+                          "id": 1450,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -530,7 +530,7 @@
                           },
                           "typeName": "uint"
                         },
-                        "id": 1472,
+                        "id": 1452,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -559,11 +559,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1474,
+                      "id": 1454,
                       "name": "_addr",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1462,
+                      "referencedDeclaration": 1442,
                       "src": "523:5:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -576,7 +576,7 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 1476,
+                  "id": 1456,
                   "nodeType": "ExpressionStatement",
                   "src": "494:34:4"
                 },
@@ -584,7 +584,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 1477,
+                    "id": 1457,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -599,29 +599,29 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 1468,
-                  "id": 1478,
+                  "functionReturnParameters": 1448,
+                  "id": 1458,
                   "nodeType": "Return",
                   "src": "535:11:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 1480,
+            "id": 1460,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1465,
+                "id": 1445,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1464,
+                  "id": 1444,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2555,
+                  "referencedDeclaration": 2535,
                   "src": "446:9:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -635,31 +635,31 @@
             "name": "setContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1463,
+              "id": 1443,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1460,
+                  "id": 1440,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1480,
+                  "scope": 1460,
                   "src": "396:33:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_ContractType_$1095",
+                    "typeIdentifier": "t_enum$_ContractType_$1075",
                     "typeString": "enum PensionLib.ContractType"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 1459,
+                    "id": 1439,
                     "name": "PensionLib.ContractType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1095,
+                    "referencedDeclaration": 1075,
                     "src": "396:23:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_ContractType_$1095",
+                      "typeIdentifier": "t_enum$_ContractType_$1075",
                       "typeString": "enum PensionLib.ContractType"
                     }
                   },
@@ -668,10 +668,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1462,
+                  "id": 1442,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1480,
+                  "scope": 1460,
                   "src": "431:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -680,7 +680,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1461,
+                    "id": 1441,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "431:7:4",
@@ -697,15 +697,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1468,
+              "id": 1448,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1467,
+                  "id": 1447,
                   "name": "_success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1480,
+                  "scope": 1460,
                   "src": "472:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -714,7 +714,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1466,
+                    "id": 1446,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "472:4:4",
@@ -729,7 +729,7 @@
               ],
               "src": "471:15:4"
             },
-            "scope": 1531,
+            "scope": 1511,
             "src": "375:177:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -737,7 +737,7 @@
           },
           {
             "body": {
-              "id": 1529,
+              "id": 1509,
               "nodeType": "Block",
               "src": "677:231:4",
               "statements": [
@@ -751,7 +751,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1498,
+                        "id": 1478,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -760,18 +760,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1494,
+                            "id": 1474,
                             "name": "_contracts",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1483,
+                            "referencedDeclaration": 1463,
                             "src": "692:10:4",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_enum$_ContractType_$1095_$dyn_memory_ptr",
+                              "typeIdentifier": "t_array$_t_enum$_ContractType_$1075_$dyn_memory_ptr",
                               "typeString": "enum PensionLib.ContractType[] memory"
                             }
                           },
-                          "id": 1495,
+                          "id": 1475,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -791,18 +791,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1496,
+                            "id": 1476,
                             "name": "_addrs",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1486,
+                            "referencedDeclaration": 1466,
                             "src": "713:6:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                               "typeString": "address[] memory"
                             }
                           },
-                          "id": 1497,
+                          "id": 1477,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -825,7 +825,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "5f636f6e74726163747320616e64205f61646472206d757374206265206f662073616d65206c656e677468",
-                        "id": 1499,
+                        "id": 1479,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -852,21 +852,21 @@
                           "typeString": "literal_string \"_contracts and _addr must be of same length\""
                         }
                       ],
-                      "id": 1493,
+                      "id": 1473,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2700,
-                        2701
+                        2680,
+                        2681
                       ],
-                      "referencedDeclaration": 2701,
+                      "referencedDeclaration": 2681,
                       "src": "684:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1500,
+                    "id": 1480,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -880,20 +880,20 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1501,
+                  "id": 1481,
                   "nodeType": "ExpressionStatement",
                   "src": "684:90:4"
                 },
                 {
                   "body": {
-                    "id": 1525,
+                    "id": 1505,
                     "nodeType": "Block",
                     "src": "824:59:4",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1523,
+                          "id": 1503,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -902,18 +902,18 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1513,
+                              "id": 1493,
                               "name": "contracts",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1444,
+                              "referencedDeclaration": 1424,
                               "src": "833:9:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                                 "typeString": "mapping(uint256 => address)"
                               }
                             },
-                            "id": 1519,
+                            "id": 1499,
                             "indexExpression": {
                               "argumentTypes": null,
                               "arguments": [
@@ -921,25 +921,25 @@
                                   "argumentTypes": null,
                                   "baseExpression": {
                                     "argumentTypes": null,
-                                    "id": 1515,
+                                    "id": 1495,
                                     "name": "_contracts",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 1483,
+                                    "referencedDeclaration": 1463,
                                     "src": "848:10:4",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_array$_t_enum$_ContractType_$1095_$dyn_memory_ptr",
+                                      "typeIdentifier": "t_array$_t_enum$_ContractType_$1075_$dyn_memory_ptr",
                                       "typeString": "enum PensionLib.ContractType[] memory"
                                     }
                                   },
-                                  "id": 1517,
+                                  "id": 1497,
                                   "indexExpression": {
                                     "argumentTypes": null,
-                                    "id": 1516,
+                                    "id": 1496,
                                     "name": "i",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 1503,
+                                    "referencedDeclaration": 1483,
                                     "src": "859:1:4",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -953,7 +953,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "848:13:4",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_enum$_ContractType_$1095",
+                                    "typeIdentifier": "t_enum$_ContractType_$1075",
                                     "typeString": "enum PensionLib.ContractType"
                                   }
                                 }
@@ -961,11 +961,11 @@
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_enum$_ContractType_$1095",
+                                    "typeIdentifier": "t_enum$_ContractType_$1075",
                                     "typeString": "enum PensionLib.ContractType"
                                   }
                                 ],
-                                "id": 1514,
+                                "id": 1494,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -978,7 +978,7 @@
                                 },
                                 "typeName": "uint"
                               },
-                              "id": 1518,
+                              "id": 1498,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1009,25 +1009,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1520,
+                              "id": 1500,
                               "name": "_addrs",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1486,
+                              "referencedDeclaration": 1466,
                               "src": "866:6:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                                 "typeString": "address[] memory"
                               }
                             },
-                            "id": 1522,
+                            "id": 1502,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1521,
+                              "id": 1501,
                               "name": "i",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1503,
+                              "referencedDeclaration": 1483,
                               "src": "873:1:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -1051,7 +1051,7 @@
                             "typeString": "address"
                           }
                         },
-                        "id": 1524,
+                        "id": 1504,
                         "nodeType": "ExpressionStatement",
                         "src": "833:42:4"
                       }
@@ -1063,18 +1063,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 1509,
+                    "id": 1489,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 1506,
+                      "id": 1486,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1503,
+                      "referencedDeclaration": 1483,
                       "src": "800:1:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1087,18 +1087,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1507,
+                        "id": 1487,
                         "name": "_addrs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1486,
+                        "referencedDeclaration": 1466,
                         "src": "804:6:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                           "typeString": "address[] memory"
                         }
                       },
-                      "id": 1508,
+                      "id": 1488,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1118,18 +1118,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1526,
+                  "id": 1506,
                   "initializationExpression": {
                     "assignments": [
-                      1503
+                      1483
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 1503,
+                        "id": 1483,
                         "name": "i",
                         "nodeType": "VariableDeclaration",
-                        "scope": 1530,
+                        "scope": 1510,
                         "src": "788:6:4",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -1138,7 +1138,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 1502,
+                          "id": 1482,
                           "name": "uint",
                           "nodeType": "ElementaryTypeName",
                           "src": "788:4:4",
@@ -1151,11 +1151,11 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 1505,
+                    "id": 1485,
                     "initialValue": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 1504,
+                      "id": 1484,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1176,7 +1176,7 @@
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 1511,
+                      "id": 1491,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1187,11 +1187,11 @@
                       "src": "819:3:4",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 1510,
+                        "id": 1490,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1503,
+                        "referencedDeclaration": 1483,
                         "src": "819:1:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1203,7 +1203,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 1512,
+                    "id": 1492,
                     "nodeType": "ExpressionStatement",
                     "src": "819:3:4"
                   },
@@ -1214,7 +1214,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 1527,
+                    "id": 1507,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1229,29 +1229,29 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 1492,
-                  "id": 1528,
+                  "functionReturnParameters": 1472,
+                  "id": 1508,
                   "nodeType": "Return",
                   "src": "891:11:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 1530,
+            "id": 1510,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1489,
+                "id": 1469,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1488,
+                  "id": 1468,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2555,
+                  "referencedDeclaration": 2535,
                   "src": "636:9:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1265,41 +1265,41 @@
             "name": "setContracts",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1487,
+              "id": 1467,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1483,
+                  "id": 1463,
                   "name": "_contracts",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1530,
+                  "scope": 1510,
                   "src": "580:36:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_enum$_ContractType_$1095_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_enum$_ContractType_$1075_$dyn_memory_ptr",
                     "typeString": "enum PensionLib.ContractType[]"
                   },
                   "typeName": {
                     "baseType": {
                       "contractScope": null,
-                      "id": 1481,
+                      "id": 1461,
                       "name": "PensionLib.ContractType",
                       "nodeType": "UserDefinedTypeName",
-                      "referencedDeclaration": 1095,
+                      "referencedDeclaration": 1075,
                       "src": "580:23:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_ContractType_$1095",
+                        "typeIdentifier": "t_enum$_ContractType_$1075",
                         "typeString": "enum PensionLib.ContractType"
                       }
                     },
-                    "id": 1482,
+                    "id": 1462,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "580:25:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_enum$_ContractType_$1095_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_enum$_ContractType_$1075_$dyn_storage_ptr",
                       "typeString": "enum PensionLib.ContractType[]"
                     }
                   },
@@ -1308,10 +1308,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1486,
+                  "id": 1466,
                   "name": "_addrs",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1530,
+                  "scope": 1510,
                   "src": "618:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1321,7 +1321,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 1484,
+                      "id": 1464,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "618:7:4",
@@ -1330,7 +1330,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 1485,
+                    "id": 1465,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "618:9:4",
@@ -1347,15 +1347,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1492,
+              "id": 1472,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1491,
+                  "id": 1471,
                   "name": "_success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1530,
+                  "scope": 1510,
                   "src": "662:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1364,7 +1364,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1490,
+                    "id": 1470,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "662:4:4",
@@ -1379,14 +1379,14 @@
               ],
               "src": "661:15:4"
             },
-            "scope": 1531,
+            "scope": 1511,
             "src": "558:350:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1532,
+        "scope": 1512,
         "src": "123:788:4"
       }
     ],
@@ -1396,14 +1396,14 @@
     "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionRegistry.sol",
     "exportedSymbols": {
       "PensionRegistry": [
-        1531
+        1511
       ]
     },
-    "id": 1532,
+    "id": 1512,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1434,
+        "id": 1414,
         "literals": [
           "solidity",
           "^",
@@ -1416,10 +1416,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "openzeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 1435,
+        "id": 1415,
         "nodeType": "ImportDirective",
-        "scope": 1532,
-        "sourceUnit": 2608,
+        "scope": 1512,
+        "sourceUnit": 2588,
         "src": "28:63:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1427,10 +1427,10 @@
       {
         "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionLib.sol",
         "file": "./PensionLib.sol",
-        "id": 1436,
+        "id": 1416,
         "nodeType": "ImportDirective",
-        "scope": 1532,
-        "sourceUnit": 1110,
+        "scope": 1512,
+        "sourceUnit": 1090,
         "src": "93:26:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1441,41 +1441,41 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1437,
+              "id": 1417,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2607,
+              "referencedDeclaration": 2587,
               "src": "151:7:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$2607",
+                "typeIdentifier": "t_contract$_Ownable_$2587",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 1438,
+            "id": 1418,
             "nodeType": "InheritanceSpecifier",
             "src": "151:7:4"
           }
         ],
         "contractDependencies": [
-          2607
+          2587
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1531,
+        "id": 1511,
         "linearizedBaseContracts": [
-          1531,
-          2607
+          1511,
+          2587
         ],
         "name": "PensionRegistry",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 1440,
+            "id": 1420,
             "name": "pensionPoints",
             "nodeType": "VariableDeclaration",
-            "scope": 1531,
+            "scope": 1511,
             "src": "164:21:4",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1484,7 +1484,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 1439,
+              "id": 1419,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "164:7:4",
@@ -1498,10 +1498,10 @@
           },
           {
             "constant": false,
-            "id": 1444,
+            "id": 1424,
             "name": "contracts",
             "nodeType": "VariableDeclaration",
-            "scope": 1531,
+            "scope": 1511,
             "src": "190:34:4",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1510,9 +1510,9 @@
               "typeString": "mapping(uint256 => address)"
             },
             "typeName": {
-              "id": 1443,
+              "id": 1423,
               "keyType": {
-                "id": 1441,
+                "id": 1421,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
                 "src": "198:4:4",
@@ -1528,7 +1528,7 @@
                 "typeString": "mapping(uint256 => address)"
               },
               "valueType": {
-                "id": 1442,
+                "id": 1422,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "206:7:4",
@@ -1543,7 +1543,7 @@
           },
           {
             "body": {
-              "id": 1457,
+              "id": 1437,
               "nodeType": "Block",
               "src": "323:46:4",
               "statements": [
@@ -1552,31 +1552,31 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 1451,
+                      "id": 1431,
                       "name": "contracts",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1444,
+                      "referencedDeclaration": 1424,
                       "src": "337:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                         "typeString": "mapping(uint256 => address)"
                       }
                     },
-                    "id": 1455,
+                    "id": 1435,
                     "indexExpression": {
                       "argumentTypes": null,
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 1453,
+                          "id": 1433,
                           "name": "_contract",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1446,
+                          "referencedDeclaration": 1426,
                           "src": "352:9:4",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_ContractType_$1095",
+                            "typeIdentifier": "t_enum$_ContractType_$1075",
                             "typeString": "enum PensionLib.ContractType"
                           }
                         }
@@ -1584,11 +1584,11 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_enum$_ContractType_$1095",
+                            "typeIdentifier": "t_enum$_ContractType_$1075",
                             "typeString": "enum PensionLib.ContractType"
                           }
                         ],
-                        "id": 1452,
+                        "id": 1432,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1601,7 +1601,7 @@
                         },
                         "typeName": "uint"
                       },
-                      "id": 1454,
+                      "id": 1434,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1626,15 +1626,15 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 1450,
-                  "id": 1456,
+                  "functionReturnParameters": 1430,
+                  "id": 1436,
                   "nodeType": "Return",
                   "src": "330:33:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 1458,
+            "id": 1438,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1642,31 +1642,31 @@
             "name": "getContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1447,
+              "id": 1427,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1446,
+                  "id": 1426,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1458,
+                  "scope": 1438,
                   "src": "252:33:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_ContractType_$1095",
+                    "typeIdentifier": "t_enum$_ContractType_$1075",
                     "typeString": "enum PensionLib.ContractType"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 1445,
+                    "id": 1425,
                     "name": "PensionLib.ContractType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1095,
+                    "referencedDeclaration": 1075,
                     "src": "252:23:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_ContractType_$1095",
+                      "typeIdentifier": "t_enum$_ContractType_$1075",
                       "typeString": "enum PensionLib.ContractType"
                     }
                   },
@@ -1678,15 +1678,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1450,
+              "id": 1430,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1449,
+                  "id": 1429,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1458,
+                  "scope": 1438,
                   "src": "308:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1695,7 +1695,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1448,
+                    "id": 1428,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "308:7:4",
@@ -1710,7 +1710,7 @@
               ],
               "src": "307:15:4"
             },
-            "scope": 1531,
+            "scope": 1511,
             "src": "231:138:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -1718,14 +1718,14 @@
           },
           {
             "body": {
-              "id": 1479,
+              "id": 1459,
               "nodeType": "Block",
               "src": "487:65:4",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1475,
+                    "id": 1455,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1734,31 +1734,31 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 1469,
+                        "id": 1449,
                         "name": "contracts",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1444,
+                        "referencedDeclaration": 1424,
                         "src": "494:9:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                           "typeString": "mapping(uint256 => address)"
                         }
                       },
-                      "id": 1473,
+                      "id": 1453,
                       "indexExpression": {
                         "argumentTypes": null,
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 1471,
+                            "id": 1451,
                             "name": "_contract",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1460,
+                            "referencedDeclaration": 1440,
                             "src": "509:9:4",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_ContractType_$1095",
+                              "typeIdentifier": "t_enum$_ContractType_$1075",
                               "typeString": "enum PensionLib.ContractType"
                             }
                           }
@@ -1766,11 +1766,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_enum$_ContractType_$1095",
+                              "typeIdentifier": "t_enum$_ContractType_$1075",
                               "typeString": "enum PensionLib.ContractType"
                             }
                           ],
-                          "id": 1470,
+                          "id": 1450,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1783,7 +1783,7 @@
                           },
                           "typeName": "uint"
                         },
-                        "id": 1472,
+                        "id": 1452,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1812,11 +1812,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1474,
+                      "id": 1454,
                       "name": "_addr",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1462,
+                      "referencedDeclaration": 1442,
                       "src": "523:5:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1829,7 +1829,7 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 1476,
+                  "id": 1456,
                   "nodeType": "ExpressionStatement",
                   "src": "494:34:4"
                 },
@@ -1837,7 +1837,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 1477,
+                    "id": 1457,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1852,29 +1852,29 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 1468,
-                  "id": 1478,
+                  "functionReturnParameters": 1448,
+                  "id": 1458,
                   "nodeType": "Return",
                   "src": "535:11:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 1480,
+            "id": 1460,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1465,
+                "id": 1445,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1464,
+                  "id": 1444,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2555,
+                  "referencedDeclaration": 2535,
                   "src": "446:9:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1888,31 +1888,31 @@
             "name": "setContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1463,
+              "id": 1443,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1460,
+                  "id": 1440,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1480,
+                  "scope": 1460,
                   "src": "396:33:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_ContractType_$1095",
+                    "typeIdentifier": "t_enum$_ContractType_$1075",
                     "typeString": "enum PensionLib.ContractType"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 1459,
+                    "id": 1439,
                     "name": "PensionLib.ContractType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1095,
+                    "referencedDeclaration": 1075,
                     "src": "396:23:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_ContractType_$1095",
+                      "typeIdentifier": "t_enum$_ContractType_$1075",
                       "typeString": "enum PensionLib.ContractType"
                     }
                   },
@@ -1921,10 +1921,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1462,
+                  "id": 1442,
                   "name": "_addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1480,
+                  "scope": 1460,
                   "src": "431:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1933,7 +1933,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1461,
+                    "id": 1441,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "431:7:4",
@@ -1950,15 +1950,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1468,
+              "id": 1448,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1467,
+                  "id": 1447,
                   "name": "_success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1480,
+                  "scope": 1460,
                   "src": "472:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1967,7 +1967,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1466,
+                    "id": 1446,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "472:4:4",
@@ -1982,7 +1982,7 @@
               ],
               "src": "471:15:4"
             },
-            "scope": 1531,
+            "scope": 1511,
             "src": "375:177:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1990,7 +1990,7 @@
           },
           {
             "body": {
-              "id": 1529,
+              "id": 1509,
               "nodeType": "Block",
               "src": "677:231:4",
               "statements": [
@@ -2004,7 +2004,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 1498,
+                        "id": 1478,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2013,18 +2013,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1494,
+                            "id": 1474,
                             "name": "_contracts",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1483,
+                            "referencedDeclaration": 1463,
                             "src": "692:10:4",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_enum$_ContractType_$1095_$dyn_memory_ptr",
+                              "typeIdentifier": "t_array$_t_enum$_ContractType_$1075_$dyn_memory_ptr",
                               "typeString": "enum PensionLib.ContractType[] memory"
                             }
                           },
-                          "id": 1495,
+                          "id": 1475,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2044,18 +2044,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1496,
+                            "id": 1476,
                             "name": "_addrs",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1486,
+                            "referencedDeclaration": 1466,
                             "src": "713:6:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                               "typeString": "address[] memory"
                             }
                           },
-                          "id": 1497,
+                          "id": 1477,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2078,7 +2078,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "5f636f6e74726163747320616e64205f61646472206d757374206265206f662073616d65206c656e677468",
-                        "id": 1499,
+                        "id": 1479,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2105,21 +2105,21 @@
                           "typeString": "literal_string \"_contracts and _addr must be of same length\""
                         }
                       ],
-                      "id": 1493,
+                      "id": 1473,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2700,
-                        2701
+                        2680,
+                        2681
                       ],
-                      "referencedDeclaration": 2701,
+                      "referencedDeclaration": 2681,
                       "src": "684:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1500,
+                    "id": 1480,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2133,20 +2133,20 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1501,
+                  "id": 1481,
                   "nodeType": "ExpressionStatement",
                   "src": "684:90:4"
                 },
                 {
                   "body": {
-                    "id": 1525,
+                    "id": 1505,
                     "nodeType": "Block",
                     "src": "824:59:4",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1523,
+                          "id": 1503,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2155,18 +2155,18 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1513,
+                              "id": 1493,
                               "name": "contracts",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1444,
+                              "referencedDeclaration": 1424,
                               "src": "833:9:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                                 "typeString": "mapping(uint256 => address)"
                               }
                             },
-                            "id": 1519,
+                            "id": 1499,
                             "indexExpression": {
                               "argumentTypes": null,
                               "arguments": [
@@ -2174,25 +2174,25 @@
                                   "argumentTypes": null,
                                   "baseExpression": {
                                     "argumentTypes": null,
-                                    "id": 1515,
+                                    "id": 1495,
                                     "name": "_contracts",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 1483,
+                                    "referencedDeclaration": 1463,
                                     "src": "848:10:4",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_array$_t_enum$_ContractType_$1095_$dyn_memory_ptr",
+                                      "typeIdentifier": "t_array$_t_enum$_ContractType_$1075_$dyn_memory_ptr",
                                       "typeString": "enum PensionLib.ContractType[] memory"
                                     }
                                   },
-                                  "id": 1517,
+                                  "id": 1497,
                                   "indexExpression": {
                                     "argumentTypes": null,
-                                    "id": 1516,
+                                    "id": 1496,
                                     "name": "i",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 1503,
+                                    "referencedDeclaration": 1483,
                                     "src": "859:1:4",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -2206,7 +2206,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "848:13:4",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_enum$_ContractType_$1095",
+                                    "typeIdentifier": "t_enum$_ContractType_$1075",
                                     "typeString": "enum PensionLib.ContractType"
                                   }
                                 }
@@ -2214,11 +2214,11 @@
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_enum$_ContractType_$1095",
+                                    "typeIdentifier": "t_enum$_ContractType_$1075",
                                     "typeString": "enum PensionLib.ContractType"
                                   }
                                 ],
-                                "id": 1514,
+                                "id": 1494,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -2231,7 +2231,7 @@
                                 },
                                 "typeName": "uint"
                               },
-                              "id": 1518,
+                              "id": 1498,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2262,25 +2262,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1520,
+                              "id": 1500,
                               "name": "_addrs",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1486,
+                              "referencedDeclaration": 1466,
                               "src": "866:6:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                                 "typeString": "address[] memory"
                               }
                             },
-                            "id": 1522,
+                            "id": 1502,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1521,
+                              "id": 1501,
                               "name": "i",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1503,
+                              "referencedDeclaration": 1483,
                               "src": "873:1:4",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -2304,7 +2304,7 @@
                             "typeString": "address"
                           }
                         },
-                        "id": 1524,
+                        "id": 1504,
                         "nodeType": "ExpressionStatement",
                         "src": "833:42:4"
                       }
@@ -2316,18 +2316,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 1509,
+                    "id": 1489,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 1506,
+                      "id": 1486,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1503,
+                      "referencedDeclaration": 1483,
                       "src": "800:1:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2340,18 +2340,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1507,
+                        "id": 1487,
                         "name": "_addrs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1486,
+                        "referencedDeclaration": 1466,
                         "src": "804:6:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                           "typeString": "address[] memory"
                         }
                       },
-                      "id": 1508,
+                      "id": 1488,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2371,18 +2371,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1526,
+                  "id": 1506,
                   "initializationExpression": {
                     "assignments": [
-                      1503
+                      1483
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 1503,
+                        "id": 1483,
                         "name": "i",
                         "nodeType": "VariableDeclaration",
-                        "scope": 1530,
+                        "scope": 1510,
                         "src": "788:6:4",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -2391,7 +2391,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 1502,
+                          "id": 1482,
                           "name": "uint",
                           "nodeType": "ElementaryTypeName",
                           "src": "788:4:4",
@@ -2404,11 +2404,11 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 1505,
+                    "id": 1485,
                     "initialValue": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 1504,
+                      "id": 1484,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2429,7 +2429,7 @@
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 1511,
+                      "id": 1491,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2440,11 +2440,11 @@
                       "src": "819:3:4",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 1510,
+                        "id": 1490,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1503,
+                        "referencedDeclaration": 1483,
                         "src": "819:1:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2456,7 +2456,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 1512,
+                    "id": 1492,
                     "nodeType": "ExpressionStatement",
                     "src": "819:3:4"
                   },
@@ -2467,7 +2467,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 1527,
+                    "id": 1507,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2482,29 +2482,29 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 1492,
-                  "id": 1528,
+                  "functionReturnParameters": 1472,
+                  "id": 1508,
                   "nodeType": "Return",
                   "src": "891:11:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 1530,
+            "id": 1510,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1489,
+                "id": 1469,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1488,
+                  "id": 1468,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2555,
+                  "referencedDeclaration": 2535,
                   "src": "636:9:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2518,41 +2518,41 @@
             "name": "setContracts",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1487,
+              "id": 1467,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1483,
+                  "id": 1463,
                   "name": "_contracts",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1530,
+                  "scope": 1510,
                   "src": "580:36:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_enum$_ContractType_$1095_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_enum$_ContractType_$1075_$dyn_memory_ptr",
                     "typeString": "enum PensionLib.ContractType[]"
                   },
                   "typeName": {
                     "baseType": {
                       "contractScope": null,
-                      "id": 1481,
+                      "id": 1461,
                       "name": "PensionLib.ContractType",
                       "nodeType": "UserDefinedTypeName",
-                      "referencedDeclaration": 1095,
+                      "referencedDeclaration": 1075,
                       "src": "580:23:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_ContractType_$1095",
+                        "typeIdentifier": "t_enum$_ContractType_$1075",
                         "typeString": "enum PensionLib.ContractType"
                       }
                     },
-                    "id": 1482,
+                    "id": 1462,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "580:25:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_enum$_ContractType_$1095_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_enum$_ContractType_$1075_$dyn_storage_ptr",
                       "typeString": "enum PensionLib.ContractType[]"
                     }
                   },
@@ -2561,10 +2561,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1486,
+                  "id": 1466,
                   "name": "_addrs",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1530,
+                  "scope": 1510,
                   "src": "618:16:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2574,7 +2574,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 1484,
+                      "id": 1464,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "618:7:4",
@@ -2583,7 +2583,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 1485,
+                    "id": 1465,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "618:9:4",
@@ -2600,15 +2600,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1492,
+              "id": 1472,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1491,
+                  "id": 1471,
                   "name": "_success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1530,
+                  "scope": 1510,
                   "src": "662:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2617,7 +2617,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1490,
+                    "id": 1470,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "662:4:4",
@@ -2632,14 +2632,14 @@
               ],
               "src": "661:15:4"
             },
-            "scope": 1531,
+            "scope": 1511,
             "src": "558:350:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1532,
+        "scope": 1512,
         "src": "123:788:4"
       }
     ],
@@ -2790,5 +2790,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-15T11:32:32.029Z"
+  "updatedAt": "2018-08-16T11:31:18.529Z"
 }

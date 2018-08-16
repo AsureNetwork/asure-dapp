@@ -121,14 +121,14 @@
     "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionSettings.sol",
     "exportedSymbols": {
       "PensionSettings": [
-        1604
+        1584
       ]
     },
-    "id": 1605,
+    "id": 1585,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1533,
+        "id": 1513,
         "literals": [
           "solidity",
           "^",
@@ -141,10 +141,10 @@
       {
         "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionLib.sol",
         "file": "./PensionLib.sol",
-        "id": 1534,
+        "id": 1514,
         "nodeType": "ImportDirective",
-        "scope": 1605,
-        "sourceUnit": 1110,
+        "scope": 1585,
+        "sourceUnit": 1090,
         "src": "26:26:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -155,16 +155,16 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1604,
+        "id": 1584,
         "linearizedBaseContracts": [
-          1604
+          1584
         ],
         "name": "PensionSettings",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1543,
+              "id": 1523,
               "nodeType": "Block",
               "src": "176:42:5",
               "statements": [
@@ -172,7 +172,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "313030",
-                    "id": 1541,
+                    "id": 1521,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -187,15 +187,15 @@
                     },
                     "value": "100"
                   },
-                  "functionReturnParameters": 1540,
-                  "id": 1542,
+                  "functionReturnParameters": 1520,
+                  "id": 1522,
                   "nodeType": "Return",
                   "src": "203:10:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1544,
+            "id": 1524,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -203,31 +203,31 @@
             "name": "getPensionFactor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1537,
+              "id": 1517,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1536,
+                  "id": 1516,
                   "name": "_pensionType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1544,
+                  "scope": 1524,
                   "src": "109:35:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_PensionType_$1097",
+                    "typeIdentifier": "t_enum$_PensionType_$1077",
                     "typeString": "enum PensionLib.PensionType"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 1535,
+                    "id": 1515,
                     "name": "PensionLib.PensionType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1097,
+                    "referencedDeclaration": 1077,
                     "src": "109:22:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_PensionType_$1097",
+                      "typeIdentifier": "t_enum$_PensionType_$1077",
                       "typeString": "enum PensionLib.PensionType"
                     }
                   },
@@ -239,15 +239,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1540,
+              "id": 1520,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1539,
+                  "id": 1519,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1544,
+                  "scope": 1524,
                   "src": "167:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -256,7 +256,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1538,
+                    "id": 1518,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "167:7:5",
@@ -271,7 +271,7 @@
               ],
               "src": "166:9:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "83:135:5",
             "stateMutability": "pure",
             "superFunction": null,
@@ -279,7 +279,7 @@
           },
           {
             "body": {
-              "id": 1557,
+              "id": 1537,
               "nodeType": "Block",
               "src": "335:27:5",
               "statements": [
@@ -290,7 +290,7 @@
                       "typeIdentifier": "t_rational_29000000000000000000_by_1",
                       "typeString": "int_const 29000000000000000000"
                     },
-                    "id": 1555,
+                    "id": 1535,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -298,7 +298,7 @@
                     "leftExpression": {
                       "argumentTypes": null,
                       "hexValue": "3239",
-                      "id": 1551,
+                      "id": 1531,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -321,7 +321,7 @@
                         "typeIdentifier": "t_rational_1000000000000000000_by_1",
                         "typeString": "int_const 1000000000000000000"
                       },
-                      "id": 1554,
+                      "id": 1534,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -329,7 +329,7 @@
                       "leftExpression": {
                         "argumentTypes": null,
                         "hexValue": "3130",
-                        "id": 1552,
+                        "id": 1532,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -349,7 +349,7 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "3138",
-                        "id": 1553,
+                        "id": 1533,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -376,15 +376,15 @@
                       "typeString": "int_const 29000000000000000000"
                     }
                   },
-                  "functionReturnParameters": 1550,
-                  "id": 1556,
+                  "functionReturnParameters": 1530,
+                  "id": 1536,
                   "nodeType": "Return",
                   "src": "341:16:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1558,
+            "id": 1538,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -392,15 +392,15 @@
             "name": "getPensionAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1547,
+              "id": 1527,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1546,
+                  "id": 1526,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1558,
+                  "scope": 1538,
                   "src": "291:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -409,7 +409,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1545,
+                    "id": 1525,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "291:6:5",
@@ -426,15 +426,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1550,
+              "id": 1530,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1549,
+                  "id": 1529,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1558,
+                  "scope": 1538,
                   "src": "326:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -443,7 +443,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1548,
+                    "id": 1528,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "326:7:5",
@@ -458,7 +458,7 @@
               ],
               "src": "325:9:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "265:97:5",
             "stateMutability": "view",
             "superFunction": null,
@@ -466,7 +466,7 @@
           },
           {
             "body": {
-              "id": 1567,
+              "id": 1547,
               "nodeType": "Block",
               "src": "446:52:5",
               "statements": [
@@ -474,7 +474,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31383630",
-                    "id": 1565,
+                    "id": 1545,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -489,15 +489,15 @@
                     },
                     "value": "1860"
                   },
-                  "functionReturnParameters": 1564,
-                  "id": 1566,
+                  "functionReturnParameters": 1544,
+                  "id": 1546,
                   "nodeType": "Return",
                   "src": "482:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1568,
+            "id": 1548,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -505,15 +505,15 @@
             "name": "getPensionSalaryPercentage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1561,
+              "id": 1541,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1560,
+                  "id": 1540,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1568,
+                  "scope": 1548,
                   "src": "402:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -522,7 +522,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1559,
+                    "id": 1539,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "402:6:5",
@@ -539,15 +539,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1564,
+              "id": 1544,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1563,
+                  "id": 1543,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1568,
+                  "scope": 1548,
                   "src": "437:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -556,7 +556,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1562,
+                    "id": 1542,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "437:7:5",
@@ -571,7 +571,7 @@
               ],
               "src": "436:9:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "366:132:5",
             "stateMutability": "pure",
             "superFunction": null,
@@ -579,7 +579,7 @@
           },
           {
             "body": {
-              "id": 1584,
+              "id": 1564,
               "nodeType": "Block",
               "src": "610:40:5",
               "statements": [
@@ -590,7 +590,7 @@
                       "typeIdentifier": "t_rational_30000000000000000000000_by_1",
                       "typeString": "int_const 30000000000000000000000"
                     },
-                    "id": 1582,
+                    "id": 1562,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -604,7 +604,7 @@
                             "typeIdentifier": "t_rational_2500000000000000000000_by_1",
                             "typeString": "int_const 2500000000000000000000"
                           },
-                          "id": 1579,
+                          "id": 1559,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -612,7 +612,7 @@
                           "leftExpression": {
                             "argumentTypes": null,
                             "hexValue": "32353030",
-                            "id": 1575,
+                            "id": 1555,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -635,7 +635,7 @@
                               "typeIdentifier": "t_rational_1000000000000000000_by_1",
                               "typeString": "int_const 1000000000000000000"
                             },
-                            "id": 1578,
+                            "id": 1558,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -643,7 +643,7 @@
                             "leftExpression": {
                               "argumentTypes": null,
                               "hexValue": "3130",
-                              "id": 1576,
+                              "id": 1556,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -663,7 +663,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "3138",
-                              "id": 1577,
+                              "id": 1557,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -691,7 +691,7 @@
                           }
                         }
                       ],
-                      "id": 1580,
+                      "id": 1560,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": false,
@@ -709,7 +709,7 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "3132",
-                      "id": 1581,
+                      "id": 1561,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -730,15 +730,15 @@
                       "typeString": "int_const 30000000000000000000000"
                     }
                   },
-                  "functionReturnParameters": 1574,
-                  "id": 1583,
+                  "functionReturnParameters": 1554,
+                  "id": 1563,
                   "nodeType": "Return",
                   "src": "616:29:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1585,
+            "id": 1565,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -746,15 +746,15 @@
             "name": "getAverageIncomeByYear",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1571,
+              "id": 1551,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1570,
+                  "id": 1550,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1585,
+                  "scope": 1565,
                   "src": "566:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -763,7 +763,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1569,
+                    "id": 1549,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "566:6:5",
@@ -780,15 +780,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1574,
+              "id": 1554,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1573,
+                  "id": 1553,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1585,
+                  "scope": 1565,
                   "src": "601:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -797,7 +797,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1572,
+                    "id": 1552,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "601:7:5",
@@ -812,7 +812,7 @@
               ],
               "src": "600:9:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "534:116:5",
             "stateMutability": "pure",
             "superFunction": null,
@@ -820,7 +820,7 @@
           },
           {
             "body": {
-              "id": 1592,
+              "id": 1572,
               "nodeType": "Block",
               "src": "727:22:5",
               "statements": [
@@ -828,7 +828,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31303030",
-                    "id": 1590,
+                    "id": 1570,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -843,15 +843,15 @@
                     },
                     "value": "1000"
                   },
-                  "functionReturnParameters": 1589,
-                  "id": 1591,
+                  "functionReturnParameters": 1569,
+                  "id": 1571,
                   "nodeType": "Return",
                   "src": "733:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1593,
+            "id": 1573,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -859,22 +859,22 @@
             "name": "getPensionPointPrecision",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1586,
+              "id": 1566,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "687:2:5"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1589,
+              "id": 1569,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1588,
+                  "id": 1568,
                   "name": "_precision",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1593,
+                  "scope": 1573,
                   "src": "711:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -883,7 +883,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1587,
+                    "id": 1567,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "711:4:5",
@@ -898,7 +898,7 @@
               ],
               "src": "710:17:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "654:95:5",
             "stateMutability": "pure",
             "superFunction": null,
@@ -906,7 +906,7 @@
           },
           {
             "body": {
-              "id": 1602,
+              "id": 1582,
               "nodeType": "Block",
               "src": "853:22:5",
               "statements": [
@@ -914,7 +914,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "32303030",
-                    "id": 1600,
+                    "id": 1580,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -929,15 +929,15 @@
                     },
                     "value": "2000"
                   },
-                  "functionReturnParameters": 1599,
-                  "id": 1601,
+                  "functionReturnParameters": 1579,
+                  "id": 1581,
                   "nodeType": "Return",
                   "src": "859:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1603,
+            "id": 1583,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -945,15 +945,15 @@
             "name": "getMaxPensionPointsByYear",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1596,
+              "id": 1576,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1595,
+                  "id": 1575,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1603,
+                  "scope": 1583,
                   "src": "788:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -962,7 +962,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1594,
+                    "id": 1574,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "788:6:5",
@@ -979,15 +979,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1599,
+              "id": 1579,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1598,
+                  "id": 1578,
                   "name": "_maxYearlyPensionPoints",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1603,
+                  "scope": 1583,
                   "src": "823:28:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -996,7 +996,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1597,
+                    "id": 1577,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "823:4:5",
@@ -1011,14 +1011,14 @@
               ],
               "src": "822:30:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "753:122:5",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1605,
+        "scope": 1585,
         "src": "54:824:5"
       }
     ],
@@ -1028,14 +1028,14 @@
     "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionSettings.sol",
     "exportedSymbols": {
       "PensionSettings": [
-        1604
+        1584
       ]
     },
-    "id": 1605,
+    "id": 1585,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1533,
+        "id": 1513,
         "literals": [
           "solidity",
           "^",
@@ -1048,10 +1048,10 @@
       {
         "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionLib.sol",
         "file": "./PensionLib.sol",
-        "id": 1534,
+        "id": 1514,
         "nodeType": "ImportDirective",
-        "scope": 1605,
-        "sourceUnit": 1110,
+        "scope": 1585,
+        "sourceUnit": 1090,
         "src": "26:26:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1062,16 +1062,16 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1604,
+        "id": 1584,
         "linearizedBaseContracts": [
-          1604
+          1584
         ],
         "name": "PensionSettings",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1543,
+              "id": 1523,
               "nodeType": "Block",
               "src": "176:42:5",
               "statements": [
@@ -1079,7 +1079,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "313030",
-                    "id": 1541,
+                    "id": 1521,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1094,15 +1094,15 @@
                     },
                     "value": "100"
                   },
-                  "functionReturnParameters": 1540,
-                  "id": 1542,
+                  "functionReturnParameters": 1520,
+                  "id": 1522,
                   "nodeType": "Return",
                   "src": "203:10:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1544,
+            "id": 1524,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1110,31 +1110,31 @@
             "name": "getPensionFactor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1537,
+              "id": 1517,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1536,
+                  "id": 1516,
                   "name": "_pensionType",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1544,
+                  "scope": 1524,
                   "src": "109:35:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_PensionType_$1097",
+                    "typeIdentifier": "t_enum$_PensionType_$1077",
                     "typeString": "enum PensionLib.PensionType"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 1535,
+                    "id": 1515,
                     "name": "PensionLib.PensionType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 1097,
+                    "referencedDeclaration": 1077,
                     "src": "109:22:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_PensionType_$1097",
+                      "typeIdentifier": "t_enum$_PensionType_$1077",
                       "typeString": "enum PensionLib.PensionType"
                     }
                   },
@@ -1146,15 +1146,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1540,
+              "id": 1520,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1539,
+                  "id": 1519,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1544,
+                  "scope": 1524,
                   "src": "167:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1163,7 +1163,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1538,
+                    "id": 1518,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "167:7:5",
@@ -1178,7 +1178,7 @@
               ],
               "src": "166:9:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "83:135:5",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1186,7 +1186,7 @@
           },
           {
             "body": {
-              "id": 1557,
+              "id": 1537,
               "nodeType": "Block",
               "src": "335:27:5",
               "statements": [
@@ -1197,7 +1197,7 @@
                       "typeIdentifier": "t_rational_29000000000000000000_by_1",
                       "typeString": "int_const 29000000000000000000"
                     },
-                    "id": 1555,
+                    "id": 1535,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1205,7 +1205,7 @@
                     "leftExpression": {
                       "argumentTypes": null,
                       "hexValue": "3239",
-                      "id": 1551,
+                      "id": 1531,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1228,7 +1228,7 @@
                         "typeIdentifier": "t_rational_1000000000000000000_by_1",
                         "typeString": "int_const 1000000000000000000"
                       },
-                      "id": 1554,
+                      "id": 1534,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1236,7 +1236,7 @@
                       "leftExpression": {
                         "argumentTypes": null,
                         "hexValue": "3130",
-                        "id": 1552,
+                        "id": 1532,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1256,7 +1256,7 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "3138",
-                        "id": 1553,
+                        "id": 1533,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1283,15 +1283,15 @@
                       "typeString": "int_const 29000000000000000000"
                     }
                   },
-                  "functionReturnParameters": 1550,
-                  "id": 1556,
+                  "functionReturnParameters": 1530,
+                  "id": 1536,
                   "nodeType": "Return",
                   "src": "341:16:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1558,
+            "id": 1538,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1299,15 +1299,15 @@
             "name": "getPensionAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1547,
+              "id": 1527,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1546,
+                  "id": 1526,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1558,
+                  "scope": 1538,
                   "src": "291:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1316,7 +1316,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1545,
+                    "id": 1525,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "291:6:5",
@@ -1333,15 +1333,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1550,
+              "id": 1530,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1549,
+                  "id": 1529,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1558,
+                  "scope": 1538,
                   "src": "326:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1350,7 +1350,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1548,
+                    "id": 1528,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "326:7:5",
@@ -1365,7 +1365,7 @@
               ],
               "src": "325:9:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "265:97:5",
             "stateMutability": "view",
             "superFunction": null,
@@ -1373,7 +1373,7 @@
           },
           {
             "body": {
-              "id": 1567,
+              "id": 1547,
               "nodeType": "Block",
               "src": "446:52:5",
               "statements": [
@@ -1381,7 +1381,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31383630",
-                    "id": 1565,
+                    "id": 1545,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1396,15 +1396,15 @@
                     },
                     "value": "1860"
                   },
-                  "functionReturnParameters": 1564,
-                  "id": 1566,
+                  "functionReturnParameters": 1544,
+                  "id": 1546,
                   "nodeType": "Return",
                   "src": "482:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1568,
+            "id": 1548,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1412,15 +1412,15 @@
             "name": "getPensionSalaryPercentage",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1561,
+              "id": 1541,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1560,
+                  "id": 1540,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1568,
+                  "scope": 1548,
                   "src": "402:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1429,7 +1429,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1559,
+                    "id": 1539,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "402:6:5",
@@ -1446,15 +1446,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1564,
+              "id": 1544,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1563,
+                  "id": 1543,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1568,
+                  "scope": 1548,
                   "src": "437:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1463,7 +1463,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1562,
+                    "id": 1542,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "437:7:5",
@@ -1478,7 +1478,7 @@
               ],
               "src": "436:9:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "366:132:5",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1486,7 +1486,7 @@
           },
           {
             "body": {
-              "id": 1584,
+              "id": 1564,
               "nodeType": "Block",
               "src": "610:40:5",
               "statements": [
@@ -1497,7 +1497,7 @@
                       "typeIdentifier": "t_rational_30000000000000000000000_by_1",
                       "typeString": "int_const 30000000000000000000000"
                     },
-                    "id": 1582,
+                    "id": 1562,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1511,7 +1511,7 @@
                             "typeIdentifier": "t_rational_2500000000000000000000_by_1",
                             "typeString": "int_const 2500000000000000000000"
                           },
-                          "id": 1579,
+                          "id": 1559,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1519,7 +1519,7 @@
                           "leftExpression": {
                             "argumentTypes": null,
                             "hexValue": "32353030",
-                            "id": 1575,
+                            "id": 1555,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1542,7 +1542,7 @@
                               "typeIdentifier": "t_rational_1000000000000000000_by_1",
                               "typeString": "int_const 1000000000000000000"
                             },
-                            "id": 1578,
+                            "id": 1558,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1550,7 +1550,7 @@
                             "leftExpression": {
                               "argumentTypes": null,
                               "hexValue": "3130",
-                              "id": 1576,
+                              "id": 1556,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1570,7 +1570,7 @@
                             "rightExpression": {
                               "argumentTypes": null,
                               "hexValue": "3138",
-                              "id": 1577,
+                              "id": 1557,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1598,7 +1598,7 @@
                           }
                         }
                       ],
-                      "id": 1580,
+                      "id": 1560,
                       "isConstant": false,
                       "isInlineArray": false,
                       "isLValue": false,
@@ -1616,7 +1616,7 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "3132",
-                      "id": 1581,
+                      "id": 1561,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1637,15 +1637,15 @@
                       "typeString": "int_const 30000000000000000000000"
                     }
                   },
-                  "functionReturnParameters": 1574,
-                  "id": 1583,
+                  "functionReturnParameters": 1554,
+                  "id": 1563,
                   "nodeType": "Return",
                   "src": "616:29:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1585,
+            "id": 1565,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1653,15 +1653,15 @@
             "name": "getAverageIncomeByYear",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1571,
+              "id": 1551,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1570,
+                  "id": 1550,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1585,
+                  "scope": 1565,
                   "src": "566:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1670,7 +1670,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1569,
+                    "id": 1549,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "566:6:5",
@@ -1687,15 +1687,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1574,
+              "id": 1554,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1573,
+                  "id": 1553,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1585,
+                  "scope": 1565,
                   "src": "601:7:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1704,7 +1704,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1572,
+                    "id": 1552,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "601:7:5",
@@ -1719,7 +1719,7 @@
               ],
               "src": "600:9:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "534:116:5",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1727,7 +1727,7 @@
           },
           {
             "body": {
-              "id": 1592,
+              "id": 1572,
               "nodeType": "Block",
               "src": "727:22:5",
               "statements": [
@@ -1735,7 +1735,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "31303030",
-                    "id": 1590,
+                    "id": 1570,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1750,15 +1750,15 @@
                     },
                     "value": "1000"
                   },
-                  "functionReturnParameters": 1589,
-                  "id": 1591,
+                  "functionReturnParameters": 1569,
+                  "id": 1571,
                   "nodeType": "Return",
                   "src": "733:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1593,
+            "id": 1573,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1766,22 +1766,22 @@
             "name": "getPensionPointPrecision",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1586,
+              "id": 1566,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "687:2:5"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1589,
+              "id": 1569,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1588,
+                  "id": 1568,
                   "name": "_precision",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1593,
+                  "scope": 1573,
                   "src": "711:15:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1790,7 +1790,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1587,
+                    "id": 1567,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "711:4:5",
@@ -1805,7 +1805,7 @@
               ],
               "src": "710:17:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "654:95:5",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1813,7 +1813,7 @@
           },
           {
             "body": {
-              "id": 1602,
+              "id": 1582,
               "nodeType": "Block",
               "src": "853:22:5",
               "statements": [
@@ -1821,7 +1821,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "32303030",
-                    "id": 1600,
+                    "id": 1580,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1836,15 +1836,15 @@
                     },
                     "value": "2000"
                   },
-                  "functionReturnParameters": 1599,
-                  "id": 1601,
+                  "functionReturnParameters": 1579,
+                  "id": 1581,
                   "nodeType": "Return",
                   "src": "859:11:5"
                 }
               ]
             },
             "documentation": null,
-            "id": 1603,
+            "id": 1583,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1852,15 +1852,15 @@
             "name": "getMaxPensionPointsByYear",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1596,
+              "id": 1576,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1595,
+                  "id": 1575,
                   "name": "_year",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1603,
+                  "scope": 1583,
                   "src": "788:12:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1869,7 +1869,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 1594,
+                    "id": 1574,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "788:6:5",
@@ -1886,15 +1886,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1599,
+              "id": 1579,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1598,
+                  "id": 1578,
                   "name": "_maxYearlyPensionPoints",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1603,
+                  "scope": 1583,
                   "src": "823:28:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1903,7 +1903,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1597,
+                    "id": 1577,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "823:4:5",
@@ -1918,14 +1918,14 @@
               ],
               "src": "822:30:5"
             },
-            "scope": 1604,
+            "scope": 1584,
             "src": "753:122:5",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1605,
+        "scope": 1585,
         "src": "54:824:5"
       }
     ],
@@ -2076,5 +2076,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-15T11:32:32.028Z"
+  "updatedAt": "2018-08-16T11:31:18.518Z"
 }

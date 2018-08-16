@@ -54,14 +54,7 @@ contract Pension is Ownable {
 
     uint256 _pensionPointValue = settings.getPensionAmount(_accessYear);
 
-    //TODO: calculate yearlyPensionPoints
-    uint256 _averageIncome = settings.getAverageIncomeByYear(2030);
-
-    uint256 _yearlyPensionPoints = _yearlyIncome*(10**3) / _averageIncome; //TODO: (getPointsByYearForAmount) we have to calculate the average income for every year until retirement starts
-
-    if (_yearlyPensionPoints > 2000) {
-      _yearlyPensionPoints = 2000;
-    }
+    uint256 _yearlyPensionPoints = calculatePensionPoints(_actualYear, _yearlyIncome); //TODO: calculate for every year until retirement
 
     uint256 _calculatedPensionPoints = ((_accessYear - _actualYear) * _yearlyPensionPoints) + _actualPensionPoints;
 

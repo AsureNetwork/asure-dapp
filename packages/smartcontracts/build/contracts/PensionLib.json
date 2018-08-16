@@ -11,14 +11,14 @@
     "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionLib.sol",
     "exportedSymbols": {
       "PensionLib": [
-        1109
+        1089
       ]
     },
-    "id": 1110,
+    "id": 1090,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1089,
+        "id": 1069,
         "literals": [
           "solidity",
           "^",
@@ -34,43 +34,43 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1109,
+        "id": 1089,
         "linearizedBaseContracts": [
-          1109
+          1089
         ],
         "name": "PensionLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "PensionLib.ContractType",
-            "id": 1095,
+            "id": 1075,
             "members": [
               {
-                "id": 1090,
+                "id": 1070,
                 "name": "PensionPoints",
                 "nodeType": "EnumValue",
                 "src": "77:13:2"
               },
               {
-                "id": 1091,
+                "id": 1071,
                 "name": "PensionSettings",
                 "nodeType": "EnumValue",
                 "src": "97:15:2"
               },
               {
-                "id": 1092,
+                "id": 1072,
                 "name": "PensionUsers",
                 "nodeType": "EnumValue",
                 "src": "119:12:2"
               },
               {
-                "id": 1093,
+                "id": 1073,
                 "name": "Pension",
                 "nodeType": "EnumValue",
                 "src": "138:7:2"
               },
               {
-                "id": 1094,
+                "id": 1074,
                 "name": "PensionWallet",
                 "nodeType": "EnumValue",
                 "src": "152:13:2"
@@ -82,10 +82,10 @@
           },
           {
             "canonicalName": "PensionLib.PensionType",
-            "id": 1097,
+            "id": 1077,
             "members": [
               {
-                "id": 1096,
+                "id": 1076,
                 "name": "Default",
                 "nodeType": "EnumValue",
                 "src": "200:7:2"
@@ -97,14 +97,14 @@
           },
           {
             "canonicalName": "PensionLib.UserData",
-            "id": 1108,
+            "id": 1088,
             "members": [
               {
                 "constant": false,
-                "id": 1099,
+                "id": 1079,
                 "name": "birthDate",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "538:16:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -113,7 +113,7 @@
                   "typeString": "int256"
                 },
                 "typeName": {
-                  "id": 1098,
+                  "id": 1078,
                   "name": "int256",
                   "nodeType": "ElementaryTypeName",
                   "src": "538:6:2",
@@ -127,10 +127,10 @@
               },
               {
                 "constant": false,
-                "id": 1101,
+                "id": 1081,
                 "name": "pensionDate",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "579:19:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -139,7 +139,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1100,
+                  "id": 1080,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "579:7:2",
@@ -153,10 +153,10 @@
               },
               {
                 "constant": false,
-                "id": 1103,
+                "id": 1083,
                 "name": "isPensioner",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "623:16:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -165,7 +165,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 1102,
+                  "id": 1082,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "623:4:2",
@@ -179,26 +179,26 @@
               },
               {
                 "constant": false,
-                "id": 1105,
+                "id": 1085,
                 "name": "pensionType",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "646:23:2",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_PensionType_$1097",
+                  "typeIdentifier": "t_enum$_PensionType_$1077",
                   "typeString": "enum PensionLib.PensionType"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 1104,
+                  "id": 1084,
                   "name": "PensionType",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 1097,
+                  "referencedDeclaration": 1077,
                   "src": "646:11:2",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_PensionType_$1097",
+                    "typeIdentifier": "t_enum$_PensionType_$1077",
                     "typeString": "enum PensionLib.PensionType"
                   }
                 },
@@ -207,10 +207,10 @@
               },
               {
                 "constant": false,
-                "id": 1107,
+                "id": 1087,
                 "name": "listPointer",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "676:19:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -219,7 +219,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1106,
+                  "id": 1086,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "676:7:2",
@@ -234,12 +234,12 @@
             ],
             "name": "UserData",
             "nodeType": "StructDefinition",
-            "scope": 1109,
+            "scope": 1089,
             "src": "515:186:2",
             "visibility": "public"
           }
         ],
-        "scope": 1110,
+        "scope": 1090,
         "src": "28:680:2"
       }
     ],
@@ -249,14 +249,14 @@
     "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/PensionLib.sol",
     "exportedSymbols": {
       "PensionLib": [
-        1109
+        1089
       ]
     },
-    "id": 1110,
+    "id": 1090,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1089,
+        "id": 1069,
         "literals": [
           "solidity",
           "^",
@@ -272,43 +272,43 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1109,
+        "id": 1089,
         "linearizedBaseContracts": [
-          1109
+          1089
         ],
         "name": "PensionLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "PensionLib.ContractType",
-            "id": 1095,
+            "id": 1075,
             "members": [
               {
-                "id": 1090,
+                "id": 1070,
                 "name": "PensionPoints",
                 "nodeType": "EnumValue",
                 "src": "77:13:2"
               },
               {
-                "id": 1091,
+                "id": 1071,
                 "name": "PensionSettings",
                 "nodeType": "EnumValue",
                 "src": "97:15:2"
               },
               {
-                "id": 1092,
+                "id": 1072,
                 "name": "PensionUsers",
                 "nodeType": "EnumValue",
                 "src": "119:12:2"
               },
               {
-                "id": 1093,
+                "id": 1073,
                 "name": "Pension",
                 "nodeType": "EnumValue",
                 "src": "138:7:2"
               },
               {
-                "id": 1094,
+                "id": 1074,
                 "name": "PensionWallet",
                 "nodeType": "EnumValue",
                 "src": "152:13:2"
@@ -320,10 +320,10 @@
           },
           {
             "canonicalName": "PensionLib.PensionType",
-            "id": 1097,
+            "id": 1077,
             "members": [
               {
-                "id": 1096,
+                "id": 1076,
                 "name": "Default",
                 "nodeType": "EnumValue",
                 "src": "200:7:2"
@@ -335,14 +335,14 @@
           },
           {
             "canonicalName": "PensionLib.UserData",
-            "id": 1108,
+            "id": 1088,
             "members": [
               {
                 "constant": false,
-                "id": 1099,
+                "id": 1079,
                 "name": "birthDate",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "538:16:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -351,7 +351,7 @@
                   "typeString": "int256"
                 },
                 "typeName": {
-                  "id": 1098,
+                  "id": 1078,
                   "name": "int256",
                   "nodeType": "ElementaryTypeName",
                   "src": "538:6:2",
@@ -365,10 +365,10 @@
               },
               {
                 "constant": false,
-                "id": 1101,
+                "id": 1081,
                 "name": "pensionDate",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "579:19:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -377,7 +377,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1100,
+                  "id": 1080,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "579:7:2",
@@ -391,10 +391,10 @@
               },
               {
                 "constant": false,
-                "id": 1103,
+                "id": 1083,
                 "name": "isPensioner",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "623:16:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -403,7 +403,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 1102,
+                  "id": 1082,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "623:4:2",
@@ -417,26 +417,26 @@
               },
               {
                 "constant": false,
-                "id": 1105,
+                "id": 1085,
                 "name": "pensionType",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "646:23:2",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_PensionType_$1097",
+                  "typeIdentifier": "t_enum$_PensionType_$1077",
                   "typeString": "enum PensionLib.PensionType"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 1104,
+                  "id": 1084,
                   "name": "PensionType",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 1097,
+                  "referencedDeclaration": 1077,
                   "src": "646:11:2",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_PensionType_$1097",
+                    "typeIdentifier": "t_enum$_PensionType_$1077",
                     "typeString": "enum PensionLib.PensionType"
                   }
                 },
@@ -445,10 +445,10 @@
               },
               {
                 "constant": false,
-                "id": 1107,
+                "id": 1087,
                 "name": "listPointer",
                 "nodeType": "VariableDeclaration",
-                "scope": 1108,
+                "scope": 1088,
                 "src": "676:19:2",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -457,7 +457,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1106,
+                  "id": 1086,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "676:7:2",
@@ -472,12 +472,12 @@
             ],
             "name": "UserData",
             "nodeType": "StructDefinition",
-            "scope": 1109,
+            "scope": 1089,
             "src": "515:186:2",
             "visibility": "public"
           }
         ],
-        "scope": 1110,
+        "scope": 1090,
         "src": "28:680:2"
       }
     ],
@@ -489,5 +489,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-14T10:50:57.091Z"
+  "updatedAt": "2018-08-16T11:30:41.383Z"
 }

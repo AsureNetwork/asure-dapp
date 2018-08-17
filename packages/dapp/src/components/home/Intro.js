@@ -63,10 +63,6 @@ class Intro extends React.Component {
             autoplay={false}
             slideWidth={1}
             infinite={true}
-            beforeChange={(from, to) =>
-              console.log(`slide from ${from} to ${to}`)
-            }
-            afterChange={index => console.log('slide to', index)}
           >
             {
               <WingBlank>
@@ -76,7 +72,7 @@ class Intro extends React.Component {
                   <img src={introWelcome} alt="Login screen" />
                   <h2>Welcome to Asure</h2>
                   <p>
-                    The Asure dApp demonstrates the german pension system built
+                    The Asure dApp demonstrates the German pension system built
                     up on blockchain within the upcoming Asure platform. On the
                     following pages you will get an introduction on how to
                     interact with the Asure platform.

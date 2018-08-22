@@ -19,7 +19,7 @@ contract('PensionTest', async accounts => {
     const pension = await Pension.deployed();
     const result = await pension.calculatePensionPoints(
       2018,
-      2500 * 12 * 10 ** 18
+      web3.utils.toWei(`${2500 * 12}`, 'ether')
     );
     assert.equal(result.toNumber(), 1000);
   });

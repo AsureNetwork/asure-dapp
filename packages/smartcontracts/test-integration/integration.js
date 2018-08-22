@@ -19,10 +19,12 @@ contract('IntegrationTest', async accounts => {
     const pensionEuroToken = await PensionEuroToken.deployed();
 
     const result = await pensionEuroToken.balanceOf.call(accounts[0]);
-    assert.equal(result.toNumber(), 100 * 10 ** 6 * 10 ** 18);
+    assert.isTrue(
+      result.eq(web3.utils.toWei(web3.utils.toBN(`${100 * 10 ** 6}`)))
+    );
 
     const result2 = await pensionEuroToken.balanceOf.call(accounts[1]);
-    assert.equal(result2.toNumber(), 0);
+    assert.isOk(result2.eq(web3.utils.toBN('0')));
   });
 
   it('registerUser', async () => {
@@ -47,7 +49,7 @@ contract('IntegrationTest', async accounts => {
     //40 years payment
     await pensionEuroToken.approve(
       pensionWallet.address,
-      testUser.pensionRate * 10 ** 18 * 40 * 12
+      web3.utils.toWei(`${testUser.pensionRate * 40 * 12}`)
     );
     for (let year = 2000; year < 2040; year++) {
       for (let month = 0; month < 12; month++) {
@@ -55,14 +57,14 @@ contract('IntegrationTest', async accounts => {
           accounts[1],
           year,
           month,
-          testUser.pensionRate * 10 ** 18
+          web3.utils.toWei(`${testUser.pensionRate}`)
         );
       }
     }
 
     const result = await pensionPoints.pointsOf.call(accounts[1]);
     //console.log("pointsOf: " + JSON.stringify(result));
-    assert.equal(result.toNumber(), 40000);
+    assert.isOk(result.eq(web3.utils.toBN('40000')));
   });
 
   it('getPaymentsByYear', async () => {
@@ -75,7 +77,11 @@ contract('IntegrationTest', async accounts => {
       );
       assert.equal(result.length, 12);
       result.forEach(payment => {
-        assert.equal(payment.toNumber(), testUser.pensionRate * 10 ** 18);
+        assert.isOk(
+          payment.eq(
+            web3.utils.toWei(web3.utils.toBN(`${testUser.pensionRate}`))
+          )
+        );
       });
     }
   });
@@ -84,7 +90,7 @@ contract('IntegrationTest', async accounts => {
     const pensionUsers = await PensionUsers.deployed();
     let result = await pensionUsers.getUserPensionDate.call(accounts[1]);
     let pensionDate = new Date(2040, 1, 1).valueOf() / 1000;
-    assert.equal(result.toNumber(), pensionDate);
+    assert.isOk(result.eq(web3.utils.toBN(`${pensionDate}`)));
   });
 
   it('withdraw', async () => {
@@ -99,29 +105,29 @@ contract('IntegrationTest', async accounts => {
     await timeTravel(diffInMs + SECONDS_IN_A_DAY * 1);
 
     let resultBalance1 = await pensionEuroToken.balanceOf(accounts[1]);
-    assert.equal(resultBalance1.toNumber(), 0);
+    assert.isOk(resultBalance1.eq(web3.utils.toBN('0')));
 
     await pensionWallet.withdraw(accounts[1], { from: accounts[1] });
 
     let resultBalance2 = await pensionEuroToken.balanceOf(accounts[1]);
-    assert.equal(resultBalance2.toNumber(), 800 * 10 ** 18);
+    assert.isOk(resultBalance2.eq(web3.utils.toWei(web3.utils.toBN('800'))));
   });
 
   it('getPointsByYearForAmount.Year', async () => {
     const pensionPoints = await PensionPoints.deployed();
     let points = await pensionPoints.getPointsByYearForAmount(
       2018,
-      testUser.pensionRate * 12 * 10 ** 18
+      web3.utils.toWei(`${testUser.pensionRate * 12}`)
     );
-    assert.equal(points.toNumber(), 1000);
+    assert.isOk(points.eq(web3.utils.toBN('1000')));
   });
 
   it('getPointsByYearForAmount.Month', async () => {
     const pensionPoints = await PensionPoints.deployed();
     let points = await pensionPoints.getPointsByYearForAmount(
       2018,
-      testUser.pensionRate * 10 ** 18
+      web3.utils.toWei(`${testUser.pensionRate}`)
     );
-    assert.equal(points.toNumber(), 83);
+    assert.isOk(points.eq(web3.utils.toBN('83')));
   });
 });

@@ -10,8 +10,8 @@
   "devDependencies": {
     "dotenv": "^6.0.0",
     "ganache-cli": "^6.1.6",
-    "truffle": "^4.1.13",
-    "truffle-hdwallet-provider": "0.0.5"
+    "truffle": "^5.0.0-beta.0",
+    "truffle-hdwallet-provider": "^1.0.0-web3one.0"
   },
   "scripts": {
     "start": "npm run ganache-ext",

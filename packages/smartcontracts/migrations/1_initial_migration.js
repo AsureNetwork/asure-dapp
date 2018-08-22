@@ -17,51 +17,49 @@ const ContractType = {
   PensionWallet: 4
 };
 
-module.exports = function(deployer, network, accounts) {
-  deployer.then(async () => {
-    deployer.deploy(Migrations);
-    deployer.deploy(Test);
+module.exports = async function(deployer, network, accounts) {
+  await deployer.deploy(Migrations);
+  await deployer.deploy(Test);
 
-    const instances = {};
+  const instances = {};
 
-    instances.DateTime = await deployer.deploy(DateTime);
-    instances.PensionEuroToken = await deployer.deploy(PensionEuroToken);
-    instances.PensionRegistry = await deployer.deploy(PensionRegistry);
-    instances.PensionSettings = await deployer.deploy(PensionSettings);
+  instances.DateTime = await deployer.deploy(DateTime);
+  instances.PensionEuroToken = await deployer.deploy(PensionEuroToken);
+  instances.PensionRegistry = await deployer.deploy(PensionRegistry);
+  instances.PensionSettings = await deployer.deploy(PensionSettings);
 
-    instances.PensionWallet = await deployer.deploy(
-      PensionWallet,
-      instances.PensionRegistry.address,
-      instances.PensionEuroToken.address,
-      instances.DateTime.address
-    );
+  instances.PensionWallet = await deployer.deploy(
+    PensionWallet,
+    instances.PensionRegistry.address,
+    instances.PensionEuroToken.address,
+    instances.DateTime.address
+  );
 
-    instances.PensionPoints = await deployer.deploy(
-      PensionPoints,
-      instances.PensionRegistry.address
-    );
+  instances.PensionPoints = await deployer.deploy(
+    PensionPoints,
+    instances.PensionRegistry.address
+  );
 
-    instances.PensionUsers = await deployer.deploy(PensionUsers);
+  instances.PensionUsers = await deployer.deploy(PensionUsers);
 
-    instances.Pension = await deployer.deploy(
-      Pension,
-      instances.PensionRegistry.address
-    );
+  instances.Pension = await deployer.deploy(
+    Pension,
+    instances.PensionRegistry.address
+  );
 
-    await PensionRegistry.deployed();
-    console.log('Initializing PensionRegistry');
+  await PensionRegistry.deployed();
+  console.log('Initializing PensionRegistry');
 
-    const contracts = {
-      [ContractType.Pension]: instances.Pension.address,
-      [ContractType.PensionPoints]: instances.PensionPoints.address,
-      [ContractType.PensionSettings]: instances.PensionSettings.address,
-      [ContractType.PensionUsers]: instances.PensionUsers.address,
-      [ContractType.PensionWallet]: instances.PensionWallet.address
-    };
+  const contracts = {
+    [ContractType.Pension]: instances.Pension.address,
+    [ContractType.PensionPoints]: instances.PensionPoints.address,
+    [ContractType.PensionSettings]: instances.PensionSettings.address,
+    [ContractType.PensionUsers]: instances.PensionUsers.address,
+    [ContractType.PensionWallet]: instances.PensionWallet.address
+  };
 
-    await instances.PensionRegistry.setContracts(
-      Object.keys(contracts),
-      Object.values(contracts)
-    );
-  });
+  await instances.PensionRegistry.setContracts(
+    Object.keys(contracts),
+    Object.values(contracts)
+  );
 };

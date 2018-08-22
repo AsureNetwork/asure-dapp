@@ -1,4 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+*.sh eol=lf
+
 *.sol linguist-language=Solidity

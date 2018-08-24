@@ -29,8 +29,8 @@ node src/cli.js --profile "${PROFILE}" register-user \
 echo "Deploying mlurz@asure.io ..."
 node src/cli.js --profile "${PROFILE}" register-user \
   --address 0xb65bd15f91499ae7bf0baf82d18043bd011d1a68 \
-  --birth-date 1950-05-01 \
-  --pension-date 2017-05-01 \
+  --birth-date 1951-05-01 \
+  --pension-date 2018-05-01 \
   --salary 2500
 
 echo "Deployment successful"

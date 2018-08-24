@@ -19,8 +19,8 @@ class PensionPlan extends Component {
     };
   }
 
-  getStyle(points) {
-    if (points <= 0.5) {
+  static getStyle(points) {
+    if (points <= 0.1) {
       return Constants.styleBadgeRed;
     } else if (points <= 0.8) {
       return Constants.styleBadgeYellow;
@@ -47,7 +47,7 @@ class PensionPlan extends Component {
               Plan for {year}
               <Badge
                 text={pointByYear !== 0 ? pointByYear : ''}
-                style={this.getStyle(pointByYear)}
+                style={PensionPlan.getStyle(pointByYear)}
               />
             </span>
           }

@@ -23,10 +23,14 @@ class PensionerHeader extends Component {
     const contractMethodCache = this.props.contracts.PensionWallet.amountOf;
 
     if (contractMethodCache[this.amountOfCacheId]) {
-      return web3.utils.fromWei(
+      let ether = web3.utils.fromWei(
         contractMethodCache[this.amountOfCacheId].value,
         'ether'
       );
+      let result=Number(ether);
+      return result.toFixed(2)
+          .replace(/\d(?=(\d{3})+\.)/g, '$&,');
+
     }
 
     return '';

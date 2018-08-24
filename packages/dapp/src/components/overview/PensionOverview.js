@@ -17,7 +17,7 @@ class PensionOverview extends Component {
 
         <List renderHeader={() => 'Statutory pension plans'}>
           <Item
-            extra="1500€"
+            extra="1500 EUR"
             arrow="horizontal"
             onClick={() => {
               this.props.history.push('/home/pension');
@@ -28,13 +28,13 @@ class PensionOverview extends Component {
         </List>
 
         <List renderHeader={() => 'Employer-funded pension plans'}>
-          <Item extra="1500€" arrow="horizontal" onClick={() => {}}>
+          <Item extra="1500 EUR" arrow="horizontal" onClick={() => {}}>
             Title <Brief>subtitle</Brief>
           </Item>
         </List>
 
         <List renderHeader={() => 'Private pension plans'}>
-          <Item extra="1500€" arrow="horizontal" onClick={() => {}}>
+          <Item extra="1500 EUR" arrow="horizontal" onClick={() => {}}>
             Title <Brief>subtitle</Brief>
           </Item>
         </List>

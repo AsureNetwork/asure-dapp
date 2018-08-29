@@ -72,10 +72,9 @@ class Intro extends React.Component {
                   <img src={introWelcome} alt="Login screen" />
                   <h2>Welcome to Asure</h2>
                   <p>
-                    The Asure dApp demonstrates the German pension system built
-                    up on blockchain within the upcoming Asure platform. On the
-                    following pages you will get an introduction on how to
-                    interact with the Asure platform.
+                    The Asure dApp demonstrates the German pension system
+                    built-up on Blockchain. On the following pages you will get
+                    an introduction on how to interact with the Asure platform.
                   </p>
                 </div>
               </WingBlank>
@@ -93,7 +92,7 @@ class Intro extends React.Component {
                     </p>
                     <p className="image-description">
                       <b>My Products</b>
-                      <br />Have an overview of all available products.
+                      <br />List of all available products.
                     </p>
                   </Flex>
                   <Flex>
@@ -106,8 +105,8 @@ class Intro extends React.Component {
                     </p>
                     <p className="image-description">
                       <b>Overview</b>
-                      <br />The overview of your life statistics regarding to
-                      products in your use.
+                      <br />The overview of your life statistics in connection
+                      to the products you use.
                     </p>
                   </Flex>
                   <Flex>
@@ -120,8 +119,8 @@ class Intro extends React.Component {
                     </p>
                     <p className="image-description">
                       <b>Wallet</b>
-                      <br />View your wallet, payment history and send or
-                      receive several currencies.
+                      <br />Here you can see your wallet and payment history,
+                      send or receive ERC20-compatible cryptocoins.
                     </p>
                   </Flex>
                   <Flex>
@@ -134,8 +133,8 @@ class Intro extends React.Component {
                     </p>
                     <p className="image-description">
                       <b>History</b>
-                      <br />View the pay-ins and payouts regarding your
-                      insurance account.
+                      <br />Here you can see the pay-ins and payouts
+                      corresponding to your insurance account.
                     </p>
                   </Flex>
                   <Flex>
@@ -148,8 +147,8 @@ class Intro extends React.Component {
                     </p>
                     <p className="image-description">
                       <b>Settings</b>
-                      <br />Do configurations regarding your profile, app
-                      functionalities and security.
+                      <br />Configure various settings regarding your profile,
+                      app functionalities and security.
                     </p>
                   </Flex>
                 </div>
@@ -163,10 +162,9 @@ class Intro extends React.Component {
                   <img src={introOverview} alt="Asure Overview" />
                   <h2>Overview</h2>
                   <p>
-                    Within the overview you get a quick summary of the most
-                    important information regarding your products. From here you
-                    have the possibility to move directly the action menu of
-                    your product.{' '}
+                    Here one can get a quick summary of the most important
+                    information about your products. From here you can move
+                    directly to the action menu of your product.{' '}
                   </p>
                 </div>
               </WingBlank>
@@ -179,15 +177,15 @@ class Intro extends React.Component {
                   <img src={introMyProducts} alt="Asure Products" />
                   <h2>My Products</h2>
                   <p>
-                    By selecting a product, you have the availability to make
-                    actions within this product.<br />
+                    You need to select a product in order to see the other
+                    options.<br />
                     <br />
                     The first product which is integrated in the Asure dApp is
                     the <b>German Statutory Pension</b>.<br />
                     <br />
-                    As a pensioner you have the possibility to start your
-                    pension payouts here and have an overview of the paid out
-                    pension amounts and the next payout day.
+                    Once you reach State Pension age you can start your pension
+                    payouts and have an overview of the paid out pension amounts
+                    and the next payout day.
                   </p>
                 </div>
               </WingBlank>
@@ -203,11 +201,11 @@ class Intro extends React.Component {
                   />
                   <h2>Pension Insurance</h2>
                   <p>
-                    You can view your actual <b>pension status</b> and change
-                    your pension access age.<br />
-                    <br /> Also you have the possibility to make a statement on
-                    your salary and will see how much your{' '}
-                    <b>monthly pension expenses</b> will be and you can
+                    Here you can see your actual <b>pension status</b> and
+                    change your retirement age.<br />
+                    <br /> There is an option to artificially change your salary
+                    in order to see how much your{' '}
+                    <b>monthly pension expenses</b> will be so that you can
                     calculate your expected pension amount.
                   </p>
                 </div>
@@ -221,13 +219,13 @@ class Intro extends React.Component {
                   <img src={introPaymentPlan} alt="Asure Payment Plan" />
                   <h2>Payment Plan</h2>
                   <p>
-                    Within the payment plan you have an overview on your recent
+                    In the payment plan you can see an overview of your recent
                     pay-ins and your actual <b>amount of pension points</b>.<br />
                   </p>
                   <p>
-                    Regarding to the german pay-as-you-go pension system, your
-                    paid out pension amount, as soon you are retired, will be
-                    calculated based on your pension points.
+                    According to the German pay-as-you-go pension system, your
+                    pension amount to be paid-out will be calculated based on
+                    your pension points once you retire.
                   </p>
                 </div>
               </WingBlank>
@@ -240,9 +238,9 @@ class Intro extends React.Component {
                   <img src={introSimulation} alt="Asure Simulation" />
                   <h2>Simulation</h2>
                   <p>
-                    You are able to use our advanced pension simulation to
-                    calculate your expected pension payouts regarding to your
-                    average salary and your pension access age.<br />
+                    One can use our advanced pension simulation to calculate
+                    his/her expected pension payouts depending on the average
+                    salary and the pension access age.<br />
                   </p>
                 </div>
               </WingBlank>
@@ -255,10 +253,10 @@ class Intro extends React.Component {
                   <img src={introStatistics} alt="Asure Statistics" />
                   <h2>Statistics</h2>
                   <p>
-                    Statistics will serve you with various information on the
-                    pension product. To make insurance and especially social
-                    security <b>more transparent</b> you will be able to get all
-                    important information regarding the whole pension system in{' '}
+                    Here you can get various information on the pension product.
+                    To make insurance and especially social security{' '}
+                    <b>more transparent</b> you will be able to get important
+                    information regarding the whole pension system in{' '}
                     <b>real time</b>!
                     {/*<RadialBarChart*/}
                     {/*width={300}*/}
@@ -279,10 +277,7 @@ class Intro extends React.Component {
                     {/*/>*/}
                     {/*</RadialBarChart>*/}
                   </p>
-                  <p>
-                    Besides many more you will be able to view the following
-                    data:
-                  </p>
+                  <p>Among other data, you will see the following items:</p>
                   <ul>
                     <li>Number of pensioners</li>
                     <li>Number of insureds</li>
@@ -304,8 +299,8 @@ class Intro extends React.Component {
 
                   <p>
                     Besides your wallet balances, within the wallet you have the
-                    opportunities to send and receive Euro Tokens or virtual
-                    currencies. You also will have an overview of your payments.<br />
+                    option to send and receive Euro Tokens or virtual
+                    currencies. You can also see an overview of your payments.<br />
                     <br />
                     <br />
                     <br />
@@ -341,11 +336,11 @@ class Intro extends React.Component {
                   />
                   <h2>History</h2>
                   <p>
-                    The history gives you an overview of the specific amounts
-                    you sent to and received from insurance products and the
-                    transactions which took place. You see the currency in which
+                    The history gives you an overview of the transactions that
+                    took place in the past. One can see the currency in which
                     the specific payment has taken place. You will get further
-                    details on the transactions by selecting an entry.<br />
+                    details on the transactions by selecting an entry.
+                    <br />
                     <br />
                   </p>
                 </div>
@@ -359,20 +354,20 @@ class Intro extends React.Component {
                   <img src={introSettings} alt="Asure Settings" />
                   <h2>Settings</h2>
                   <p>
-                    Settings allows you to configure the Asure dApp regarding{' '}
-                    <b>your needs</b>. You have the possibility to change
-                    personal information like your name and your job.<br />
+                    Here you can configure the dApp according to{' '}
+                    <b>your needs</b>. You have the option to change personal
+                    information like your name and the job you are currently at.<br />
                     <br />
                   </p>
                   <p>
                     <b>Developers</b> have the possibility to change the network
-                    address here to operate on a testnet when implementing new
+                    address to operate on a testnet when implementing new
                     functions.<br />
                   </p>
                   <p>
                     In the security settings you are able to set a passcode to
-                    secure the dApp. You're also enabled to do various
-                    configuration regarding <b>your privacy</b>.
+                    secure the dApp. You can also configure various{' '}
+                    <b>privacy settings</b> here.
                   </p>
                 </div>
               </WingBlank>

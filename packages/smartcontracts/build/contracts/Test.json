@@ -13,7 +13,8 @@
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "signature": "0xc605f76c"
     },
     {
       "constant": false,
@@ -27,7 +28,8 @@
       ],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "function"
+      "type": "function",
+      "signature": "0xd09de08a"
     }
   ],
   "bytecode": "0x608060405234801561001057600080fd5b5060c38061001f6000396000f30060806040526004361060485763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c605f76c8114604d578063d09de08a146071575b600080fd5b348015605857600080fd5b50605f6083565b60408051918252519081900360200190f35b348015607c57600080fd5b50605f6089565b60005490565b6000805460010190819055905600a165627a7a7230582027b709359583726a32fcca14d21d19a6755be31427d0a26fec7458d2363715100029",
@@ -40,14 +42,14 @@
     "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/Test.sol",
     "exportedSymbols": {
       "Test": [
-        2640
+        2659
       ]
     },
-    "id": 2641,
+    "id": 2660,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2618,
+        "id": 2637,
         "literals": [
           "solidity",
           "^",
@@ -63,19 +65,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2640,
+        "id": 2659,
         "linearizedBaseContracts": [
-          2640
+          2659
         ],
         "name": "Test",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 2620,
+            "id": 2639,
             "name": "num",
             "nodeType": "VariableDeclaration",
-            "scope": 2640,
+            "scope": 2659,
             "src": "49:7:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -84,7 +86,7 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 2619,
+              "id": 2638,
               "name": "int",
               "nodeType": "ElementaryTypeName",
               "src": "49:3:10",
@@ -98,33 +100,33 @@
           },
           {
             "body": {
-              "id": 2627,
+              "id": 2646,
               "nodeType": "Block",
               "src": "111:23:10",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2625,
+                    "id": 2644,
                     "name": "num",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2620,
+                    "referencedDeclaration": 2639,
                     "src": "125:3:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 2624,
-                  "id": 2626,
+                  "functionReturnParameters": 2643,
+                  "id": 2645,
                   "nodeType": "Return",
                   "src": "118:10:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 2628,
+            "id": 2647,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -132,22 +134,22 @@
             "name": "helloWorld",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2621,
+              "id": 2640,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "82:2:10"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2624,
+              "id": 2643,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2623,
+                  "id": 2642,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2628,
+                  "scope": 2647,
                   "src": "106:3:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -156,7 +158,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2622,
+                    "id": 2641,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "106:3:10",
@@ -171,7 +173,7 @@
               ],
               "src": "105:5:10"
             },
-            "scope": 2640,
+            "scope": 2659,
             "src": "63:71:10",
             "stateMutability": "view",
             "superFunction": null,
@@ -179,14 +181,14 @@
           },
           {
             "body": {
-              "id": 2638,
+              "id": 2657,
               "nodeType": "Block",
               "src": "182:37:10",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2634,
+                    "id": 2653,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -197,11 +199,11 @@
                     "src": "189:5:10",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 2633,
+                      "id": 2652,
                       "name": "num",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2620,
+                      "referencedDeclaration": 2639,
                       "src": "189:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -213,33 +215,33 @@
                       "typeString": "int256"
                     }
                   },
-                  "id": 2635,
+                  "id": 2654,
                   "nodeType": "ExpressionStatement",
                   "src": "189:5:10"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2636,
+                    "id": 2655,
                     "name": "num",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2620,
+                    "referencedDeclaration": 2639,
                     "src": "210:3:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 2632,
-                  "id": 2637,
+                  "functionReturnParameters": 2651,
+                  "id": 2656,
                   "nodeType": "Return",
                   "src": "203:10:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 2639,
+            "id": 2658,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -247,22 +249,22 @@
             "name": "increment",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2629,
+              "id": 2648,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "158:2:10"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2632,
+              "id": 2651,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2631,
+                  "id": 2650,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2639,
+                  "scope": 2658,
                   "src": "177:3:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -271,7 +273,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2630,
+                    "id": 2649,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "177:3:10",
@@ -286,14 +288,14 @@
               ],
               "src": "176:5:10"
             },
-            "scope": 2640,
+            "scope": 2659,
             "src": "140:79:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 2641,
+        "scope": 2660,
         "src": "30:192:10"
       }
     ],
@@ -303,14 +305,14 @@
     "absolutePath": "/C/git/asure-dapp/packages/smartcontracts/contracts/Test.sol",
     "exportedSymbols": {
       "Test": [
-        2640
+        2659
       ]
     },
-    "id": 2641,
+    "id": 2660,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2618,
+        "id": 2637,
         "literals": [
           "solidity",
           "^",
@@ -326,19 +328,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2640,
+        "id": 2659,
         "linearizedBaseContracts": [
-          2640
+          2659
         ],
         "name": "Test",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 2620,
+            "id": 2639,
             "name": "num",
             "nodeType": "VariableDeclaration",
-            "scope": 2640,
+            "scope": 2659,
             "src": "49:7:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -347,7 +349,7 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 2619,
+              "id": 2638,
               "name": "int",
               "nodeType": "ElementaryTypeName",
               "src": "49:3:10",
@@ -361,33 +363,33 @@
           },
           {
             "body": {
-              "id": 2627,
+              "id": 2646,
               "nodeType": "Block",
               "src": "111:23:10",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2625,
+                    "id": 2644,
                     "name": "num",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2620,
+                    "referencedDeclaration": 2639,
                     "src": "125:3:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 2624,
-                  "id": 2626,
+                  "functionReturnParameters": 2643,
+                  "id": 2645,
                   "nodeType": "Return",
                   "src": "118:10:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 2628,
+            "id": 2647,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -395,22 +397,22 @@
             "name": "helloWorld",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2621,
+              "id": 2640,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "82:2:10"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2624,
+              "id": 2643,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2623,
+                  "id": 2642,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2628,
+                  "scope": 2647,
                   "src": "106:3:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -419,7 +421,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2622,
+                    "id": 2641,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "106:3:10",
@@ -434,7 +436,7 @@
               ],
               "src": "105:5:10"
             },
-            "scope": 2640,
+            "scope": 2659,
             "src": "63:71:10",
             "stateMutability": "view",
             "superFunction": null,
@@ -442,14 +444,14 @@
           },
           {
             "body": {
-              "id": 2638,
+              "id": 2657,
               "nodeType": "Block",
               "src": "182:37:10",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2634,
+                    "id": 2653,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -460,11 +462,11 @@
                     "src": "189:5:10",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 2633,
+                      "id": 2652,
                       "name": "num",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2620,
+                      "referencedDeclaration": 2639,
                       "src": "189:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -476,33 +478,33 @@
                       "typeString": "int256"
                     }
                   },
-                  "id": 2635,
+                  "id": 2654,
                   "nodeType": "ExpressionStatement",
                   "src": "189:5:10"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 2636,
+                    "id": 2655,
                     "name": "num",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2620,
+                    "referencedDeclaration": 2639,
                     "src": "210:3:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 2632,
-                  "id": 2637,
+                  "functionReturnParameters": 2651,
+                  "id": 2656,
                   "nodeType": "Return",
                   "src": "203:10:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 2639,
+            "id": 2658,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -510,22 +512,22 @@
             "name": "increment",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2629,
+              "id": 2648,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "158:2:10"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2632,
+              "id": 2651,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2631,
+                  "id": 2650,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2639,
+                  "scope": 2658,
                   "src": "177:3:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -534,7 +536,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2630,
+                    "id": 2649,
                     "name": "int",
                     "nodeType": "ElementaryTypeName",
                     "src": "177:3:10",
@@ -549,14 +551,14 @@
               ],
               "src": "176:5:10"
             },
-            "scope": 2640,
+            "scope": 2659,
             "src": "140:79:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 2641,
+        "scope": 2660,
         "src": "30:192:10"
       }
     ],
@@ -576,8 +578,8 @@
     "1234567890": {
       "events": {},
       "links": {},
-      "address": "0x8a3110d1436aaa82dda29db0fa90e9d51cd849ca",
-      "transactionHash": "0xf1fb43f1d58b2401a93d5f4a12eb4254d22527ab751bab40893a52e1e9266045"
+      "address": "0x8A3110d1436aaa82ddA29DB0FA90E9D51cD849Ca",
+      "transactionHash": "0x7a0bafeae3cd65b8b08d388d40d5e8a3f8120eef1b404eb29034fe712b3fd296"
     },
     "1531943681938": {
       "events": {},
@@ -724,6 +726,6 @@
       "transactionHash": "0x32c8d197f9d65db379e4e034720d3b48bb5385bc138c0f96775762a83c7afb64"
     }
   },
-  "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-16T11:31:18.507Z"
+  "schemaVersion": "3.0.0-beta.0",
+  "updatedAt": "2018-08-27T16:27:34.617Z"
 }

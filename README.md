@@ -25,7 +25,7 @@ Also, you can try our the dApp on IPFS at [https://ipfs.asure.io/ipns/dapp.asure
 
 ## Project Status
 
-[![Build Status](https://travis-ci.org/AsureFoundation/asure-dapp.svg?branch=master)](https://travis-ci.org/AsureFoundation/asure-dapp)
+[![GitHub license](https://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/AsureFoundation/asure-dapp/blob/master/LICENSE) [![Build Status](https://travis-ci.org/AsureFoundation/asure-dapp.svg?branch=master)](https://travis-ci.org/AsureFoundation/asure-dapp)
 [![Twitter](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/intent/user?screen_name=Asure_io)
 
 **This implementation is still very much a work in progress.** It can be used for testing,

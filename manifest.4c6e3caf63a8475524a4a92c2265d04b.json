@@ -1,0 +1,46 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.d941b7d2ee7ac98dec48ce44669a16d3.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.d1dc9629d348405667dba801c0022604.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_144x144.60668497d705c5166ae3d13476a33447.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.45b0f827e97871d913267801f72da724.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_72x72.2fd8f54b08dfa63e12f6ad281474cf65.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_48x48.5dc3817e851eb8865b435939113fd4b7.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_36x36.5ffa5e100b7f1ac9033ffd12af15195c.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    }
+  ],
+  "name": "Asure dApp - Rethink Insurance!",
+  "short_name": "Asure dApp",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#eeeeee",
+  "background_color": "#eeeeee"
+}

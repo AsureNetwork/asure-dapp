@@ -20,24 +20,16 @@ The [dapp package](https://github.com/AsureFoundation/asure-dapp/tree/master/pac
 It is a mobile web application
 based on [create-react-app](https://github.com/facebook/create-react-app).
 
-## device-wrapper
-
-The [device-wrapper package](https://github.com/AsureFoundation/asure-dapp/tree/master/packages/device-wrapper) loads a given url in an iframe which is wrapped in an
-iphone mockup. We use it to showcase our Asure dApp in an IPhone mockup as
-the Asure dApp is optimized for mobile only.
-
-It is a web application based on [create-react-app](https://github.com/facebook/create-react-app).
-
 ## gpcli
 
 The [gpcli package](https://github.com/AsureFoundation/asure-dapp/tree/master/packages/gpcli)
 is our swiss army cli tool and is used to run the simulation of our german pension
 product including
 
- - creating test data
- - paying into the pension system
- - getting money out of  the pension system
- - etc.
+- creating test data
+- paying into the pension system
+- getting money out of the pension system
+- etc.
 
 ## smartcontracts
 
@@ -79,9 +71,8 @@ See https://prettier.io/docs/en/webstorm.html
 
 #### Editorconfig
 
-Install the EditorConfig plugin.  It ensures that you're using the correct
+Install the EditorConfig plugin. It ensures that you're using the correct
 settings from out .editorconfig
-
 
 ## Deployment
 
@@ -99,4 +90,4 @@ https://support.microsoft.com/de-de/help/2977003/the-latest-supported-visual-c-d
 
 ```sh
 npm config set msvs_version 2015 --global
-```   
+```

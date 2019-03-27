@@ -11,7 +11,6 @@ platform:
 cache:
   - node_modules
   - packages/dapp/node_modules
-  - packages/device-wrapper/node_modules
   - packages/gpcli/node_modules
   - packages/smartcontracts/node_modules
 

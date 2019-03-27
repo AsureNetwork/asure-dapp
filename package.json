@@ -9,6 +9,7 @@
     "start-dapp": "npm run --prefix packages/dapp start",
     "format": "pretty-quick",
     "build": "lerna run build",
+    "deploy": "gh-pages -d packages/dapp/build",
     "postinstall": "npm run bootstrap",
     "precommit": "pretty-quick --staged",
     "postcommit": "git update-index --again"
@@ -21,6 +22,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "husky": "^0.14.3",
     "lerna": "^2.11.0",
     "prettier": "^1.13.7",

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const { injectBabelPlugin, getLoader } = require('react-app-rewired');
 
@@ -66,6 +67,15 @@ module.exports = function override(config, env) {
       filename: 'desktop.html',
       template: 'public/desktop.html',
       chunks: ['desktop']
+    })
+  );
+  config.plugins.unshift(
+    new ScriptExtHtmlWebpackPlugin({
+      custom: {
+        test: /\.js$/,
+        attribute: ' data-cfasync',
+        value: 'false'
+      }
     })
   );
 

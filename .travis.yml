@@ -3,11 +3,13 @@ language: node_js
 node_js:
   - 8
   - 10
-cache:
-  directories:
-    - node_modules
-    - packages/*/node_modules
+cache: false
+#cache:
+#  directories:
+#    - node_modules
+#    - packages/*/node_modules
 before_install:
+  - npm cache verify
   - npm install -g npm
   - npm --version
 script:
